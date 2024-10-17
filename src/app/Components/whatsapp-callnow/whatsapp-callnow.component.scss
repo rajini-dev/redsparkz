@@ -1,0 +1,43 @@
+
+  /* Icon style for both buttons */
+  .mat-icon-button i {
+    font-size: 20px;
+    margin-right: 8px; /* Spacing between icon and text */
+  }
+  
+  /* Call button specific styles */
+  .call-button {
+    background-color: #e0f0ff; /* Light blue background */
+  }
+  
+  .call-button i {
+    color: #005eff; /* Icon color for Call */
+  }
+  
+  /* WhatsApp button specific styles */
+  .whatsapp-button {
+    background-color: #eaffea; /* Light green background */
+  }
+  
+  .whatsapp-button i {
+    color: #1a9900; /* WhatsApp green color */
+  }
+  
+  /* Button hover effects */
+  .mat-icon-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+//   @media only screen and (max-width: 768px) {
+//     /* Make buttons stack vertically on smaller screens */
+//     .button-container {
+//       flex-direction: column;
+//     }
+  
+//     .col-6 {
+//       width: 100%;
+//       margin-bottom: 10px; /* Add spacing between stacked buttons */
+//     }
+//   }
+  
+  

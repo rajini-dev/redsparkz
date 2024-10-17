@@ -1,0 +1,51 @@
+<div class="container my-5 py-5">
+  <!-- Pricing Plans Section -->
+  <h1 class="text-center display-4 mb-5 font-weight-bold trendy-title">Our Service Packages</h1>
+  <div class="row trendy-pricing-cards">
+    <!-- Pricing plans with ngFor -->
+    <div class="col-md-4 mb-4" *ngFor="let plan of pricingPlans">
+      <div class="card pricing-card h-100 text-center">
+        <div class="card-body">
+          <h3 class="card-title trendy-heading">{{ plan.name }}</h3>
+          <p class="card-text trendy-price">Starts at ₹{{ plan.price }}</p>
+          <ul class="list-unstyled trendy-features">
+            <li *ngFor="let feature of plan.features">{{ feature }}</li>
+          </ul>
+
+          <!-- Call Us Button -->
+          <a href="tel:+911234567890" class="btn trendy-btn-primary mt-3">
+            <i class="fas fa-phone-alt"></i> Call Us
+          </a>
+
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/911234567890" target="_blank" class="btn trendy-btn-whatsapp mt-3">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+  <h1 class="text-center display-4 mt-5 mb-4 font-weight-bold trendy-title">Contact Us</h1>
+  
+  <div class="row trendy-contact">
+    <!-- Call Us Section -->
+    <div class="col-md-6 text-center mb-4">
+      <h3>Call Us Now</h3>
+      <p><i class="fas fa-phone trendy-icon"></i> +91-123-456-7890</p>
+      <a href="tel:+911234567890" class="btn trendy-btn-primary btn-lg mt-3">
+        <i class="fas fa-phone-alt"></i> Call Now
+      </a>
+    </div>
+
+    <!-- WhatsApp Section -->
+    <div class="col-md-6 text-center">
+      <h3>Chat with Us on WhatsApp</h3>
+      <p><i class="fab fa-whatsapp trendy-icon"></i> +91-123-456-7890</p>
+      <a href="https://wa.me/911234567890" target="_blank" class="btn trendy-btn-whatsapp btn-lg mt-3">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </div>
+</div>

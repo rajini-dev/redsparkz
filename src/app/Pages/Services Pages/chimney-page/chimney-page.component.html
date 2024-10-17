@@ -1,0 +1,222 @@
+<div class="container">
+    <div class="service-list" id="serviceList">
+        <h1 class="heading-1">Chimney Repair & Service</h1>
+            <div class="warranty-card card grey-bg p-4 pointer rounded mt-4" (click)="openWarrantyCard()">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <div class="col-10">
+                        <h6 class="heading-6"><span><i class="fa-regular fa-circle-check"
+                                    style="color:green;"></i></span> RS COVER</h6>
+                        <h6 class="heading-6 mt-2"> 180-days warranty on repairs</h6>
+                    </div>
+                    <div class="col-2">
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="select-service-section mt-4">
+                <mat-card appearance="outlined">
+                    <mat-card-content>
+                        <p><b>Select a service</b></p>
+                        <div class="row d-flex justify-content-center align-items-start mt-3">
+                            <div class="col-4 text-center pointer active" id="serviceLink1" (click)="scrollToService('service1', 0)">
+                                <img class="img-fluid border rounded mb-2"
+                                    src="../../../assets/Home-images/easy-icon.png" alt="">
+                                <p>Repair</p>
+                            </div>
+                            <div class="col-4 text-center pointer" id="serviceLink2" (click)="scrollToService('service2', 1)">
+                                <img class="img-fluid border rounded mb-2"
+                                    src="../../../assets/Home-images/easy-icon.png" alt="">
+                                <p>Cleaning</p>
+                            </div>
+                            <div class="col-4 text-center pointer" id="serviceLink3" (click)="scrollToService('service3', 2)">
+                                <img class="img-fluid border rounded mb-2"
+                                    src="../../../assets/Home-images/easy-icon.png" alt="">
+                                <p>Instalation / Uninstalation</p>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+    </div>
+    <div class="service-details mt-md-0 mt-4" id="serviceDetails">
+        <div class="details-content">
+            <mat-card appearance="outlined" class="p-md-4 p-2">
+                <mat-card-content id="service1" class=" repair-section">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="heading-2 red">Repair</h2>
+                            <!-- Wall mount chimney -->
+                            <h4 class="heading-4 mt-4">Chimney repair</h4>
+                            <h6 class="heading-6 mt-2"><span><i class="fa-solid fa-shield fa-xl"
+                                        style="color: #007bff;"></i></span>
+                                100% Trusted
+                            </h6>
+                            <h6 class="heading-6 my-2"><strong>Starts at &#8377;150 </strong></h6>
+                            <hr class="dotted-line">
+                            <ul>
+                                <li class="">
+                                    Visiting charges in case you decide to not go ahead with repair work
+                                </li>
+                                <li>
+                                    Complete diagnosis of chimney to identify problems like fan mortor issues, wiring
+                                    problems...
+                                </li>
+                            </ul>
+                            <app-warranty-button></app-warranty-button>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-container mb-2">
+                                <img src="../../../assets/Home-images/profestional.png" alt="Description of the image"
+                                    class="responsive-image">
+                            </div>
+                            <app-whatsapp-callnow></app-whatsapp-callnow>
+                        </div>
+                        <div class="col-md-12 justify-content-center align-items-center pt-md-4 pt-2 px-md-4  mt-md-0 mt-2">
+                            <ngx-slick-carousel class="carousel" [config]="slideConfig">
+                                <div ngxSlickItem *ngFor="let issue of issues" class="slide">
+                                    <mat-card appearance="outlined" class="issue-card grey-bg mb-md-4 mb-2 m-md-2 m-1">
+                                        <div class="p-md-3 p-2">
+                                            <h5 class="heading-5">{{ issue.issue }}</h5>
+                                            <p class="price mb-0 mt-2 green">
+                                                <strong>&#8377;{{ issue.price }}</strong>
+                                            </p>
+                                        </div>
+                                    </mat-card>
+                                </div>
+                            </ngx-slick-carousel>
+                        </div>
+                    </div>
+           
+
+                  
+                </mat-card-content>
+                <app-horizontal-line></app-horizontal-line>
+
+                <!-- CLEANING SERVICE -->
+                <mat-card-content id="service2">
+                    <h2 class="heading-2 red">Cleaning</h2>
+                    <div class="row row d-flex justify-content-center align-items-center ">
+                   
+                        <div class="col-md-7">
+                          
+                            <!--  Chimney basic cleanig -->
+                            <h4 class="heading-4 mt-4">Chimney basic cleanig</h4>
+                            <h6 class="heading-6 mt-2"><span><i class="fa-solid fa-shield fa-xl"
+                                        style="color: #007bff;"></i></span>
+                                100% Trusted
+                            </h6>
+                            <h6 class="heading-6 my-2"><strong> &#8377;499 &nbsp;&nbsp;</strong><span class="cost"> - 60 min</span></h6>
+                            <hr class="dotted-line">
+                            <p>Cleaning of outer surface, mesh, and inside surface of the mesh with cleaning solutions to wipe the oil</p>
+                            <h6 class="pointer view-details" color="primary">View details</h6>
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-container">
+                                <img src="../../../assets/Home-images/profestional.png" alt="Description of the image"
+                                    class="responsive-image">
+                            </div>
+                            <app-whatsapp-callnow></app-whatsapp-callnow>
+                        </div>
+
+                    </div>
+                    <hr>
+
+             
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-md-7">
+                              <!--  Chimney deep cleanig -->
+                            <h4 class="heading-4 mt-4">Chimney deep cleanig</h4>
+                            <h6 class="heading-6 mt-2"><span><i class="fa-solid fa-shield fa-xl"
+                                        style="color: #007bff;"></i></span>
+                                100% Trusted
+                            </h6>
+                            <h6 class="heading-6 my-2"><strong> &#8377;999 &nbsp;&nbsp;</strong><span class="cost"> - 1 hr 45 min</span></h6>
+                            <hr class="dotted-line">
+                            <p>Cleaning of outer surface, mesh, and inside surface of the mesh with cleaning solutions to wipe the oil</p>
+                            <h6 class="pointer view-details" color="primary">View details</h6>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-container">
+                                <img src="../../../assets/Home-images/profestional.png" alt="Description of the image"
+                                    class="responsive-image">
+                            </div>
+                            <app-whatsapp-callnow></app-whatsapp-callnow>
+                        </div>
+                    </div>
+                   
+                </mat-card-content>
+
+                <app-horizontal-line></app-horizontal-line>
+
+                <!-- INSTALATION SERVICE -->
+                <mat-card-content id="service3">
+                    <h2 class="heading-2 red">Installation / Uninstallation
+                    </h2>
+                    <div class="row d-flex justify-content-center align-items-center">
+                       
+                        <div class="col-md-7">
+                            <!-- Wall mount chimney -->
+                            <h4 class="heading-4 mt-4">Chimney Instalation</h4>
+                            <h6 class="heading-6 mt-2"><span><i class="fa-solid fa-shield fa-xl"
+                                        style="color: #007bff;"></i></span>
+                                100% Trusted
+                            </h6>
+                            <h6 class="heading-6 my-2"><strong> &#8377;549 &nbsp;&nbsp;</strong><span class="cost"> - 60 min</span></h6>
+                            <hr class="dotted-line">
+                            <ul>
+                                <li class="">
+                                    Installation and assembling of a chimney , pay per chimney
+                                </li>
+                                <li>
+                                    Complete diagnosis of chimney to identify problems like fan mortor issues, wiring
+                                    problems...
+                                </li>
+                            </ul>
+                            <!-- <app-warranty-button></app-warranty-button> -->
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-container">
+                                <img src="../../../assets/Home-images/profestional.png" alt="Description of the image"
+                                    class="responsive-image">
+                            </div>
+                            <app-whatsapp-callnow></app-whatsapp-callnow>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- ISLAND CHIMNEY DESIGN -->
+                    <div class="row d-flex justify-content-center align-items-center">
+                       
+                        <div class="col-md-7">
+                            <!-- Wall mount chimney -->
+                            <h4 class="heading-4 mt-4">Chimney Uninstalation</h4>
+                            <h6 class="heading-6 mt-2"><span><i class="fa-solid fa-shield fa-xl"
+                                        style="color: #007bff;"></i></span>
+                                100% Trusted
+                            </h6>
+                            <h6 class="heading-6 my-2"><strong> &#8377;449 &nbsp;&nbsp;</strong><span class="cost"> - 60 min</span></h6>
+                            <hr class="dotted-line">
+                            <ul>
+                                <li class="">
+                                    Uninstalling & dissembling of a chimney
+                                </li>
+                            </ul>
+                            <!-- <app-warranty-button></app-warranty-button> -->
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-container">
+                                <img src="../../../assets/Home-images/profestional.png" alt="Description of the image"
+                                    class="responsive-image">
+                            </div>
+                            <app-whatsapp-callnow></app-whatsapp-callnow>
+                        </div>
+                    </div>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+

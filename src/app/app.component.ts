@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'redsparkz';
+  ngOnInit() {
+    window.scrollTo(0, 0); // Scrolls the page to the top on load
+  }
 }

@@ -1,0 +1,41 @@
+<div class="container-fluid py-1">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center mt-md-0 mt-3">
+            <div class="col-lg-6 col-10 d-flex justify-content-center align-items-center order-md-2">
+                <img class="img-fluid text-center" src="../../../../assets/Home-images/land-screen-image.png" alt="" />
+            </div>
+            <div class="col-lg-6 order-md-1 pb-md-0 pb-4">
+                <div class="banner-title-1">Save 60%</div>
+                <div class="banner-title-2">Experience Sparkling Clean</div>
+                <div class="banner-title-3">
+                    With Our Trusted Cleaning Services
+                </div>
+                <div class="row mt-md-5 mt-3">
+                    <div class="col-md-6" *ngFor="let point of points">
+                        <p class="para-text">
+                            <span>
+                                <img class="thumbu-up  me-2" src="../../../../assets/Home-images/thumbs up.png"
+                                    alt="" /></span>
+                            <span><b>{{ point.text }}</b></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-md-5 mt-3">
+                    <div class="col-6 order-md-2">
+                        <button mat-stroked-button class="rounded-pill py-md-4 py-2 w-100 button-custom-2"
+                            color="primary" [routerLink]="['/contact-us']">
+                            Find Out More
+                        </button>
+                    </div>
+                    <div class="col-6 order-md-1 ">
+                        <button mat-stroked-button class="rounded-pill py-md-4 py-2 w-100 button-custom-1"
+                            color="primary" [routerLink]="['/contact-us']">
+                            Get Call Today
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

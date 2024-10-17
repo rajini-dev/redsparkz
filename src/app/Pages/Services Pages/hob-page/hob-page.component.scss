@@ -1,0 +1,142 @@
+/* Global Color Palette */
+$primary-color: #4CAF50; /* Trendy Green */
+$whatsapp-color: #25D366; /* WhatsApp Green */
+$hover-color: #333; /* Button Hover */
+$background-light: #f9f9f9;
+$text-dark: #333;
+$text-light: #6c757d;
+
+/* Global Settings */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Headings and Titles */
+.trendy-title {
+  font-size: 3rem;
+  color: $text-dark;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Pricing Section */
+.trendy-pricing-cards {
+  .pricing-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      font-size: 1.75rem;
+      color: $text-dark;
+      font-weight: 600;
+    }
+
+    .card-text {
+      font-size: 1.25rem;
+      color: $text-light;
+      margin-bottom: 20px;
+    }
+
+    .trendy-price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $primary-color;
+    }
+
+    .trendy-features {
+      font-size: 1rem;
+      color: $text-light;
+      list-style: none;
+      padding: 0;
+    }
+
+    .trendy-btn-primary {
+      background-color: $primary-color;
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: scale(1.05);
+      }
+    }
+
+      /* WhatsApp Button */
+      .trendy-btn-whatsapp {
+        background-color: $whatsapp-color;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          background-color: darken($whatsapp-color, 10%);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  
+  /* Contact Us Section */
+  .trendy-contact {
+    h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: $text-dark;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: $text-light;
+      margin-bottom: 20px;
+    }
+  
+    .trendy-icon {
+      font-size: 2rem;
+      color: $primary-color;
+  
+      &.fa-whatsapp {
+        color: $whatsapp-color;
+      }
+    }
+  
+    .btn-lg {
+      padding: 15px 30px;
+      font-size: 1.25rem;
+      border-radius: 50px;
+  
+      &:hover {
+        background-color: $hover-color;
+        color: #fff;
+      }
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .trendy-title {
+      font-size: 2.5rem;
+    }
+  
+    .pricing-card {
+      margin-bottom: 30px;
+    }
+  
+    .btn-lg {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

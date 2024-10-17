@@ -1,0 +1,14 @@
+/* Smooth opening and closing transitions for the drawer */
+.smooth-drawer {
+    transition: transform 0.4s ease-in-out; /* Smoother transition for both open and close */
+  }
+  
+  .smooth-drawer.mat-drawer-opened {
+    transform: translateX(0); /* Drawer fully opened */
+  }
+  
+  .smooth-drawer.mat-drawer {
+    transform: translateX(-100%); /* Drawer slides in from the left when closed */
+  }
+  
+  

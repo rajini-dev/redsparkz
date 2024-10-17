@@ -1,0 +1,62 @@
+.container-fluid {
+    background: linear-gradient(to right, #ffc5cb, #ffffff);
+  }
+  
+.banner-title-1 {
+  font-size: clamp(20px, 3.5vw, 55px) !important;
+  font-weight: 800 !important;
+  color: #384aa9 !important;
+  line-height: 130% !important;
+}
+.banner-title-2 {
+    font-size: clamp(18px, 3vw, 40px) !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    line-height: 130% !important;
+  }
+
+.banner-title-3 {
+  font-size: clamp(18px, 3vw, 40px) !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  line-height: 130% !important;
+}
+.para-text{
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    align-items: center;
+}
+.thumbu-up {
+  width:1.3rem;
+  margin-top: -1%;
+}
+
+/* Assuming you are using CSS for styling */
+.button-custom-1 {
+  background-color: green;
+  color: white; /* Adjust text color as needed */
+  border: 2px solid green;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: clamp(.68rem, 2vw ,1rem);
+}
+
+.button-custom-1:hover {
+  background-color: white;
+  border-color: green;
+  color: green;
+  font-weight: 600;
+}
+
+.button-custom-2 {
+  background-color: black;
+  color: white; /* Adjust text color as needed */
+  border: 2px solid black;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: clamp(.7rem, 2vw ,1rem);
+}
+
+.button-custom-2:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+  font-weight: 600;
+}

@@ -1,4 +1,305 @@
-/* You can add global styles to this file, and also import other style files */
+// src/styles/custom-theme.scss
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@use '@angular/material' as mat;
+
+// Include the common styles for Angular Material.
+@include mat.core();
+
+// Define the custom primary palette for Redsparkz with #FF3232 as the primary color
+$Redsparkz-primary: mat.define-palette((
+  50 : #ffe5e5,   // Lightest shade
+  100 : #ffb3b3,  // Light shade
+  200 : #ff8080,  // Lighter shade
+  300 : #ff4d4d,  // Light-medium shade
+  400 : #ff3d3d,  // Medium shade
+  500 : #FF3232,  // Primary color (#FF3232)
+  600 : #d72a2a,  // Darker shade
+  700 : #c82424,  // Dark-medium shade
+  800 : #b81e1e,  // Dark shade
+  900 : #a61717,  // Darkest shade
+  A100 : #ff8a80,  // Accent light
+  A200 : #ff5252,  // Accent medium
+  A400 : #ff1744,  // Accent dark
+  A700 : #d50000,  // Accent darker
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #ffffff,
+  )
+));
+
+// Define the custom secondary palette for Redsparkz with black as the secondary color
+$Redsparkz-secondary: mat.define-palette((
+  50: #ffffff,  // Lightest shade (white)
+  100: #e0e0e0, // Light shade (light gray)
+  200: #bdbdbd, // Lighter shade (gray)
+  300: #9e9e9e, // Light-medium shade (medium gray)
+  400: #757575, // Medium shade (dark gray)
+  500: #000000, // Primary color (black)
+  600: #000000, // Darker shade (black)
+  700: #000000, // Dark-medium shade (black)
+  800: #000000, // Dark shade (black)
+  900: #000000, // Darkest shade (black)
+  A100: #ffffff, // Accent light (white)
+  A200: #e0e0e0, // Accent medium (light gray)
+  A400: #bdbdbd, // Accent dark (gray)
+  A700: #757575, // Accent darker (dark gray)
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff, // Keep white contrast for primary color
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+));
+
+// The warn palette is optional (defaults to red).
+$Redsparkz-warn: mat.define-palette(mat.$red-palette);
+
+// Create the Redsparkz theme object.
+$Redsparkz-theme: mat.define-light-theme((
+  color: (
+    primary: $Redsparkz-primary,
+    accent: $Redsparkz-secondary,
+    warn: $Redsparkz-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+// Include theme styles for core and each component used in your app.
+@include mat.all-component-themes($Redsparkz-theme);
+
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'San Francisco', 'Helvetica Neue', 'Arial', sans-serif; // Apple font style
+  font-size: 0.875rem; // Base font size of 16px
+  background-color: #ffffff; // White background
+  color: #000000; // Primary text color
+}
+
+// Define color variables
+$primary-text-color: #000000; // Black for primary text
+$secondary-text-color: #404040; // Dark gray for secondary text
+$link-color: #007aff; // Blue for links
+$border-color: #e0e0e0; // Light gray for borders
+
+// Paragraph styles
+p {
+  font-size: 0.875rem; // 16px equivalent
+  color: $secondary-text-color; // Secondary text color for readability
+  line-height: 1.6; // Line height for better readability
+  margin-bottom: 1rem; // Space between paragraphs (16px)
+}
+
+// Link styles
+a {
+  font-size: 0.875rem; // 16px equivalent
+  color: $link-color; // Use the defined link color
+  text-decoration: none; // No underline by default
+  &:hover {
+    text-decoration: underline; // Underline on hover
+  }
+}
+
+// Border utility
+.border {
+  border: 1px solid $border-color; // Light gray borders
+  border-radius: 4px; // Rounded corners for a modern feel
+}
+
+// List styles
+ul, ol {
+  margin: 1rem 0; // Adds spacing above and below lists (16px)
+  padding-left: 1.5rem; // Indentation for list items (24px)
+  font-size: 0.875rem;// 16px equivalent for list items
+  color: $primary-text-color; // Use the primary text color
+}
+
+li {
+  margin-bottom: 0.5rem; // Space between list items (8px)
+  line-height: 1.6; // Consistent line height for list items
+}
+
+// Table styles
+table {
+  width: 100%; // Full width for responsive design
+  border-collapse: collapse; // No gaps between table cells
+  margin-bottom: 1rem; // Space below tables (16px)
+  color: $primary-text-color; // Primary text color for table content
+  font-size: 1rem; // 16px equivalent for table text
+}
+
+th, td {
+  padding: 0.75rem; // Padding inside table cells (12px)
+  border: 1px solid $border-color; // Light gray borders around cells
+  text-align: left; // Left align text in table cells
+}
+
+th {
+  background-color: #f8f8f8; // Slightly darker background for table header
+  font-weight: bold; // Bold text for headers
+}
+
+td {
+  background-color: #ffffff; // White background for table cells
+}
+
+tr:nth-child(even) td {
+  background-color: #f9f9f9; // Alternating background color for even rows
+}
+
+
+// Use a consistent border style for inputs and buttons
+input, button {
+  border: 1px solid $border-color; // Light gray border
+  border-radius: 4px; // Rounded corners
+}
+.red {
+  color: #eb1d36 !important;
+}
+.white{
+  color: white !important;
+}
+.green{
+  color: green;
+}
+
+
+
+// Heading styles
+.heading-1 {
+  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem) !important; // Largest heading (H1)
+}
+
+.heading-2 {
+  font-size: clamp(1.375rem, 2.5vw + 0.25rem, 2.25rem) !important; // H2
+}
+
+.heading-3 {
+  font-size: clamp(1.25rem, 2vw + 0.125rem, 2rem) !important; // H3
+}
+
+.heading-4 {
+  font-size: clamp(1.125rem, 1.5vw + 0.125rem, 1.75rem) !important; // H4
+}
+
+.heading-5 {
+  font-size: clamp(1rem, 1vw + 0.125rem, 1.5rem) !important; // H5
+}
+
+.heading-6 {
+  font-size: clamp(0.875rem, 0.75vw + 0.125rem, 1.25rem) !important; // H6
+}
+
+// Subheading styles
+.sub-heading {
+  font-size: clamp(0.875rem, 1vw + 0.125rem, 1.25rem) !important; // Subheading
+}
+
+
+// Additional styles for all headings
+h1, h2, h3, h4, h5, h6, .heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
+  // font-weight: 500; // Medium weight for all headings
+  // color: $primary-text-color; // Use primary text color
+  margin: 0; // Remove default margins
+}
+
+
+
+
+
+.red-bg {
+  background-color: #eb1d36 !important;
+}
+.white-bg {
+  background-color: white !important;
+}
+.black-bg {
+  background-color: #000000 !important;
+}
+.grey-bg{
+  background-color: #F5F5F5 !important;
+}
+
+//font-weight
+.fw-700 {
+  font-weight: 700;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-300 {
+  font-weight: 300;
+}
+
+.ls {
+  letter-spacing: 2px;
+}
+
+
+// line-height
+
+.lh-100 {
+  line-height: 100%;
+}
+.lh-180 {
+  line-height: 180%;
+}
+
+.lh-200 {
+  line-height: 200%;
+}
+.lh-250 {
+  line-height: 250%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative !important;
+}
+.absolute {
+  position: absolute !important;
+}
+
+.dotted-line {
+  border: none;              /* Remove the default border */
+  border-top: 1.5px dotted #757575; /* Create a dotted border at the top */
+  height: 0;                 /* Ensure no additional height */
+  margin: 20px 0;            /* Optional: space around the line */
+}

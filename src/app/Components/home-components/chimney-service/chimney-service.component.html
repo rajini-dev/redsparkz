@@ -1,0 +1,32 @@
+<div class="container my-5 py-5 chimney-service-section">
+    <h2 class="display-4 text-center mb-4">Our Chimney Service Packages</h2>
+  
+    <!-- Slick Carousel for Service Packages -->
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let service of chimneyServices" class="slide">
+        <!-- <div class="card-wrapper py-3"> -->
+          <mat-card class="chimney-card">
+            <!-- Service Title and Price -->
+            <mat-card-content class="text-center">
+              <mat-card-title class="h4 service-title">{{ service.serviceType }}</mat-card-title>
+            </mat-card-content>
+  
+            <!-- Chimney Service Info -->
+            <mat-card-content class="text-center mb-0">
+              <h3 class="service-price text-success">Starts at &#8377;{{ service.price }}</h3>
+              <p class="service-description text-muted">{{ service.description }}</p>
+              <span class="service-duration red">{{ service.duration }}</span>
+            </mat-card-content>
+  
+            <!-- View Details Button -->
+            <mat-card-actions class="d-flex justify-content-center mt-0">
+              <button mat-raised-button color="primary" (click)="openDialog(service)" class="view-details-btn">
+                View Details
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        <!-- </div> -->
+      </div>
+    </ngx-slick-carousel>
+  </div>
+  
