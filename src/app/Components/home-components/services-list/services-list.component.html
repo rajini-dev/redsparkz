@@ -1,0 +1,30 @@
+<div class="container mt-5 py-5">
+  <div class="row d-flex justify-content-center align-items-center">
+    <h1 class="heading-1 text-center mb-4 display-4 font-weight-bold">What Service Are You Looking For?</h1>
+    
+    <!-- Card template for each service -->
+    <div class="col-md-3 col-6 mb-4 pointer" *ngFor="let service of services">
+      <a [routerLink]="['/' + service.pageLink]"class="text-decoration-none card-link">
+        <mat-card class="text-center rounded trendy-card card">
+          <mat-card-content class="p-0">
+            <div class="img-container p-md-3 p-2">
+              <img class="img-fluid rounded" [src]="service.serviceImage" alt="{{service.service}}">
+            </div>
+            <h5 class="heading-4  mb-2 text-dark">{{service.service}}</h5>
+            <p class="grey font-weight-bold  mb-md-3 mb-2">Starts from <span class="green">&#8377;{{service.servicePrice}}</span></p>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <!-- <div class="col-md-6">
+      <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let banner of banners" class="slide">
+            <img [src]="banner.banner" [alt]="banner.altText" class="banner-image" />        
+        </div>
+      </ngx-slick-carousel>
+
+    </div> -->
+  

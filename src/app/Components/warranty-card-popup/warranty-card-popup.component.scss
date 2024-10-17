@@ -1,0 +1,15 @@
+mat-card {
+    position: relative; /* Ensures that the close button is positioned relative to the card */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 8px;   /* Position close button at the top */
+    right: 8px; /* Position close button at the right */
+    color: #ff0000; /* Optional: red color for the close icon */
+    z-index: 10; /* Ensures the button stays above other content */
+    background-color: white; /* Optional: gives a background to make it stand out */
+    border-radius: 50%; /* Optional: make the button circular */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: shadow for better visibility */
+  }
+  

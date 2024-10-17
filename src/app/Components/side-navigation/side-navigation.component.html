@@ -1,0 +1,63 @@
+<div class="drawer-container">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="">
+      <img src="../../../assets/Logo/redsparkz logo header.png" class="mob-logo" alt="redsparkz" />
+    </div>
+    <div class="close-icon me-3">
+      <mat-icon (click)="closeDrawer.emit()">close</mat-icon>
+    </div>
+  </div>
+  <div class="navigation-links">
+    <!-- Navigation links here -->
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/home']">
+        Home
+      </button>
+    </div>
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/about']">
+        About
+      </button>
+    </div>
+
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/services']">
+        Services
+      </button>
+    </div>
+
+
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/products']">
+        Products
+      </button>
+    </div>
+
+
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/blogs']">
+        Blogs
+      </button>
+    </div>
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/success-stories']">
+        Success Stories
+      </button>
+    </div>
+
+
+    <div class="box">
+      <mat-divider></mat-divider>
+      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/contact']">
+        Contact
+      </button>
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+</div>

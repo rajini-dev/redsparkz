@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{ data.serviceType }}</h1>
+<div mat-dialog-content>
+  <p><strong>Price:</strong> &#8377;{{ data.price }}</p>
+  <p><strong>Duration:</strong> {{ data.duration }}</p>
+  <p><strong>Description:</strong> {{ data.description }}</p>
+  <p><strong>What's included:</strong></p>
+  <ul>
+    <li *ngFor="let item of data.details">{{ item }}</li>
+  </ul>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>

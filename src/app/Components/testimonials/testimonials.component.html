@@ -1,0 +1,50 @@
+<div class="container my-5 py-5">
+    <h1 class="display-4 heading-1 text-center mb-4 font-weight-bold">What Our Clients Say</h1>
+
+    <!-- Slick Carousel for Testimonials -->
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let testimonial of testimonials" class="slide">
+            <div class="testimonial-card text-center m-3">
+                <!-- Client Image -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <img [src]="testimonial.image" class="rounded-circle img-fluid mb-3" alt="Client Image">
+                </div>
+                
+                <!-- Client Name -->
+                <h4 class="font-weight-bold">{{ testimonial.name }}</h4>
+
+                <!-- Star Rating System -->
+                <div class="rating mb-3">
+                    <i class="fas" [ngClass]="{
+                      'fa-star': testimonial.rating >= 1,
+                      'fa-star-half-alt': testimonial.rating === 0.5,
+                      'fa-star-o': testimonial.rating < 1
+                    }"></i>
+                    <i class="fas" [ngClass]="{
+                      'fa-star': testimonial.rating >= 2,
+                      'fa-star-half-alt': testimonial.rating === 1.5,
+                      'fa-star-o': testimonial.rating < 2
+                    }"></i>
+                    <i class="fas" [ngClass]="{
+                      'fa-star': testimonial.rating >= 3,
+                      'fa-star-half-alt': testimonial.rating === 2.5,
+                      'fa-star-o': testimonial.rating < 3
+                    }"></i>
+                    <i class="fas" [ngClass]="{
+                      'fa-star': testimonial.rating >= 4,
+                      'fa-star-half-alt': testimonial.rating === 3.5,
+                      'fa-star-o': testimonial.rating < 4
+                    }"></i>
+                    <i class="fas" [ngClass]="{
+                      'fa-star': testimonial.rating >= 5,
+                      'fa-star-half-alt': testimonial.rating === 4.5,
+                      'fa-star-o': testimonial.rating < 5
+                    }"></i>
+                </div>
+
+                <!-- Client Feedback -->
+                <p class="text-muted">{{ testimonial.feedback }}</p>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</div>

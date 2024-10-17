@@ -1,0 +1,34 @@
+.mob-logo {
+    max-width: 14rem;
+  }
+  
+  .btn-img {
+    max-width: 1.27663rem;
+  }
+  
+  .btns {
+    width: 100%;
+    justify-content: start;
+    padding: 5px 0 5px 20px;
+  }
+  .box {
+    width: 100%;
+  }
+  .down-arrow-1 {
+    padding-left: 20px !important;
+  }
+  
+  .btn-color {
+    background-color: #ffffff;
+    border: none;
+  }
+  
+  .drawer-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 75vw; /* Adjust width as needed */
+    background-color: #fff; /* Set background color as needed */
+    overflow-y: auto; /* Allow vertical scrolling within the drawer */
+  }

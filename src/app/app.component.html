@@ -1,2 +1,29 @@
+<mat-drawer-container
+  class="example-container w-100"
+  [hasBackdrop]="true"
+  autosize="true"
+  autoFocus="true"
+>
+  <div class="mb-md-4 pb-md-5 mb-5 pb-3">
+    <app-main-header
+      class="w-100"
+      (openDrawer)="drawer.open()"
+    ></app-main-header>
+  </div>
 
-<router-outlet></router-outlet>
+  <mat-drawer
+    #drawer
+    class="w-75 smooth-drawer"
+    mode="over"
+    position="start"
+  >
+    <app-side-navigation (closeDrawer)="drawer.close()"></app-side-navigation>
+  </mat-drawer>
+
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+    <!-- <app-home-donate></app-home-donate> -->
+    <app-main-footer></app-main-footer>
+  </div>
+</mat-drawer-container>
+

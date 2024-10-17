@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
-
+  ngOnInit() {
+    window.scrollTo(0, 0); // Scrolls the page to the top on load
+  }
+  
 }

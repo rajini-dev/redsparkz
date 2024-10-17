@@ -1,0 +1,59 @@
+<div class="container-fluid fixed px-0 px-md-1 ">
+  <div class="d-flex row justify-content-between align-items-center" (scroll)="onScroll()"
+    *ngIf="getScreenWidth >= 1030; else mobileScreen">
+    <div class="d-flex col-2 justify-content-start align-items-center">
+      <img src="../../../assets/Logo/redsparkz logo footer.png" alt="Red sparkz" class="web-logo pointer"
+        [routerLink]="['/home']" />
+    </div>
+    <div class="d-flex row col-10 justify-content-end align-items-center">
+
+      <div class="d-flex justify-content-center align-items-center col-auto">
+        <button mat-button class="white services-button order-1" [matMenuTriggerFor]="servicesMenu" #menuTrigger="matMenuTrigger">
+          Services
+          <mat-icon class="order-2">{{ menuTrigger.menuOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+        </button>
+        <mat-menu #servicesMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/services/chimney']">Chimney</button>
+          <button mat-menu-item [routerLink]="['/services/gas-stove']">Gas stove</button>
+          <button mat-menu-item [routerLink]="['/services/hob']">Hob</button>
+          <button mat-menu-item [routerLink]="['/services/kitchen']">Kitchen</button>
+        </mat-menu>
+      </div>
+      
+      <div class="d-flex justify-content-center align-items-center col-auto">
+        <button mat-button class="white" [routerLink]="['/products']">
+          Products
+        </button>
+      </div>
+      <div class="d-flex justify-content-center align-items-center col-auto">
+        <button mat-button class="white" [routerLink]="['/blogs']">
+          Blogs
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center col-auto">
+        <button mat-raised-button class="rounded-pill p-4 " color="primary" [routerLink]="['/contact']">
+          Contact
+        </button>
+      </div>
+    </div>
+  </div>
+  <ng-template #mobileScreen>
+    <div (scroll)="onScroll()" class="d-flex align-items-center justify-content-center py-2">
+      <div class="d-flex justify-content-center align-items-center col-2">
+        <button mat-icon-button (click)="openDrawer.emit()" class="text-center white-bg">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="d-flex justify-content-center align-items-center col-6">
+        <img src="../../../assets/Logo/redsparkz logo header.png" class="mob-logo pointer" [routerLink]="['/home']"
+          alt="Red sparkz" />
+      </div>
+      <div class="d-flex justify-content-center align-items-center col-4">
+        <button mat-raised-button class="rounded-pill p-3 p-md-4 " color="secondary" [routerLink]="['/contact']">
+          Contact
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</div>
