@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -37,6 +38,20 @@ import { GasstoveServiceDetailDialogComponent } from './Components/dialog-boxes/
 import { HobServiceDetailDialogComponent } from './Components/dialog-boxes/hob-service-detail-dialog/hob-service-detail-dialog.component';
 import { KitchenServiceComponent } from './Components/home-components/kitchen-service/kitchen-service.component';
 import { KitchenServiceDetailDialogComponent } from './Components/dialog-boxes/kitchen-service-detail-dialog/kitchen-service-detail-dialog.component';
+import { TermsComponent } from './Components/terms/terms.component';
+import { KitchenComponent } from './Components/Charges-tables-components/kitchen-charges/kitchen-charges.component';
+import { KitchenCleaningGalleryComponent } from './Components/Gallery-components/kitchen-cleaning-gallery/kitchen-cleaning-gallery.component';
+import { ChimneyChargesComponent } from './Components/Charges-tables-components/chimney-charges/chimney-charges.component';
+import { HobChargesComponent } from './Components/Charges-tables-components/hob-charges/hob-charges.component';
+import { GasStoveChargesComponent } from './Components/Charges-tables-components/gas-stove-charges/gas-stove-charges.component';
+import { GasStoveGalleryComponent } from './Components/Gallery-components/gas-stove-gallery/gas-stove-gallery.component';
+import { HobGalleryComponent } from './Components/Gallery-components/hob-gallery/hob-gallery.component';
+import { ChimneyGalleryComponent } from './Components/Gallery-components/chimney-gallery/chimney-gallery.component';
+import { FaqChimneyComponent } from './Components/Faq-components/faq-chimney/faq-chimney.component';
+import { FaqHobComponent } from './Components/Faq-components/faq-hob/faq-hob.component';
+import { FaqKitchenComponent } from './Components/Faq-components/faq-kitchen/faq-kitchen.component';
+import { FaqGasStoveComponent } from './Components/Faq-components/faq-gas-stove/faq-gas-stove.component';
+
 
 @NgModule({
   declarations: [
@@ -65,6 +80,19 @@ import { KitchenServiceDetailDialogComponent } from './Components/dialog-boxes/k
     HobServiceDetailDialogComponent,
     KitchenServiceComponent,
     KitchenServiceDetailDialogComponent,
+    TermsComponent,
+    KitchenComponent,
+    KitchenCleaningGalleryComponent,
+    ChimneyChargesComponent,
+    HobChargesComponent,
+    GasStoveChargesComponent,
+    GasStoveGalleryComponent,
+    HobGalleryComponent,
+    ChimneyGalleryComponent,
+    FaqChimneyComponent,
+    FaqHobComponent,
+    FaqKitchenComponent,
+    FaqGasStoveComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,6 +107,7 @@ import { KitchenServiceDetailDialogComponent } from './Components/dialog-boxes/k
     MatSidenavModule,
     MatDialogModule,
     SlickCarouselModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],

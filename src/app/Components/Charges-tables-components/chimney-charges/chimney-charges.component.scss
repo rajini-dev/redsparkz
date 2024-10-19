@@ -1,0 +1,98 @@
+.table-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  thead {
+    background: linear-gradient(45deg, #6a82fb, #fc5c7d);
+    color: white;
+  }
+  
+  .table-title {
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #4a4a4a;
+    color: white;
+  }
+  
+  .title-text {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
+  td {
+    position: relative;
+    font-size: 1em;
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(100, 181, 246, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .info-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #f50057;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: #616161;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #616161 transparent transparent transparent;
+  }
+  
+  td:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

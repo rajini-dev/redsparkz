@@ -1,0 +1,50 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" class="table-title">
+            <span class="title-text">GAS STOVE SERVICES</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="red">Service Type</th>
+          <th class="red">Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let service of gasStoveServices" (mouseenter)="onHover(service)" (mouseleave)="onLeave()">
+          <td>
+            <i class="material-icons info-icon">info</i>
+            {{ service.type }}
+            <span class="tooltip">{{ service.description }}</span>
+          </td>
+          <td>{{ service.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" class="table-title">
+            <span class="title-text">GAS STOVE REPAIR</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="red">Repair Type</th>
+          <th class="red">Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let repair of gasStoveRepairs" (mouseenter)="onHover(repair)" (mouseleave)="onLeave()">
+          <td>
+            <i class="material-icons info-icon">info</i>
+            {{ repair.issue }}
+            <span class="tooltip">{{ repair.description }}</span>
+          </td>
+          <td>{{ repair.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

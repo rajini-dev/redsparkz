@@ -1,0 +1,26 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" class="table-title">
+            <span class="title-text">CHIMNEY SERVICES</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="red">Service Type</th>
+          <th class="red">Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cleaning of cleaningTypes" (mouseenter)="onHover(cleaning)" (mouseleave)="onLeave()">
+          <td>
+            <i class="material-icons info-icon">info</i>
+            {{ cleaning.type }}
+            <span class="tooltip">{{ cleaning.description }}</span>
+          </td>
+          <td>{{ cleaning.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

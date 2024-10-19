@@ -1,33 +1,110 @@
+/* WhatsApp Button Styling */
+.btn-whatsapp {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  animation: pulse-whatsapp 2s infinite;
+}
 
-  /* Icon style for both buttons */
-  .mat-icon-button i {
-    font-size: 20px;
-    margin-right: 8px; /* Spacing between icon and text */
+@keyframes pulse-whatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); /* Green pulse */
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); /* Green pulse */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.btn-whatsapp:hover {
+  background: #128C7E;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.btn-whatsapp i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Call Button Styling */
+.btn-call {
+  background: linear-gradient(45deg, #2196F3, #0D47A1);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  animation: pulse-call 2s infinite;
+}
+
+@keyframes pulse-call {
+  0% {
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.5); /* Blue pulse */
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(33, 150, 243, 0); /* Blue pulse */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
+
+.btn-call:hover {
+  background: #0D47A1;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.btn-call i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+  .btn-whatsapp, .btn-call {
+    padding: 10px 20px; /* Reduce padding */
+    font-size: 16px; /* Smaller font size */
   }
   
-  /* Call button specific styles */
-  .call-button {
-    background-color: #e0f0ff; /* Light blue background */
+  .btn-whatsapp i, .btn-call i {
+    font-size: 1.3rem; /* Smaller icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-whatsapp, .btn-call {
+    padding: 8px 15px; /* Further reduce padding */
+    font-size: 14px; /* Even smaller font size for mobile */
   }
   
-  .call-button i {
-    color: #005eff; /* Icon color for Call */
+  .btn-whatsapp i, .btn-call i {
+    font-size: 1.2rem; /* Smaller icons */
   }
-  
-  /* WhatsApp button specific styles */
-  .whatsapp-button {
-    background-color: #eaffea; /* Light green background */
-  }
-  
-  .whatsapp-button i {
-    color: #1a9900; /* WhatsApp green color */
-  }
-  
-  /* Button hover effects */
-  .mat-icon-button:hover {
-    background-color: #e0e0e0;
-  }
-  
+}
+
 //   @media only screen and (max-width: 768px) {
 //     /* Make buttons stack vertically on smaller screens */
 //     .button-container {

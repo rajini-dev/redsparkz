@@ -1,121 +1,137 @@
-// Variables
-$primary-color:#ff5722; // Trendy blue color
-$accent-color: #ff5722; // Accent color for buttons
-$background-color: #f4f4f4; // Light background for cards
-$text-dark: #333; // Dark text for contrast
-$hover-color: rgba(52, 152, 219, 0.15); // Hover overlay color
+// // Variables
+// $primary-color:#ff5722; // Trendy blue color
+// $accent-color: #ff5722; // Accent color for buttons
+// $background-color: #f4f4f4; // Light background for cards
+// $text-dark: #333; // Dark text for contrast
+// $hover-color: rgba(52, 152, 219, 0.15); // Hover overlay color
 
-// Kitchen Service Section Styles
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px;
-}
+// // Kitchen Service Section Styles
+// .container {
+//     max-width: 1200px;
+//     margin: auto;
+//     padding: 30px;
+// }
 
-.trendy-card {
-    background: linear-gradient(135deg, #ffffff, #f0f8ff); // Gradient background
-    border-radius: 20px; // More rounded corners
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; // Ensures uniform height
-    display: flex; // Flexbox for alignment
-    flex-direction: column; // Stack items vertically
-    position: relative; // For pseudo-element positioning
+// .trendy-card {
+//     background: linear-gradient(135deg, #ffffff, #f0f8ff); // Gradient background
+//     border-radius: 20px; // More rounded corners
+//     padding: 20px;
+//     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//     height: 100%; // Ensures uniform height
+//     display: flex; // Flexbox for alignment
+//     flex-direction: column; // Stack items vertically
+//     position: relative; // For pseudo-element positioning
 
-    &:hover {
-        transform: translateY(-10px); // More lift effect on hover
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); // Increased shadow on hover
-    }
+//     &:hover {
+//         transform: translateY(-10px); // More lift effect on hover
+//         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); // Increased shadow on hover
+//     }
 
-    // Pseudo-element for a unique background on hover
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: $hover-color; // Light blue overlay
-        border-radius: 20px; // Match the card's border-radius
-        z-index: 0;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+//     // Pseudo-element for a unique background on hover
+//     &::before {
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         background: $hover-color; // Light blue overlay
+//         border-radius: 20px; // Match the card's border-radius
+//         z-index: 0;
+//         opacity: 0;
+//         transition: opacity 0.3s ease;
+//     }
 
-    &:hover::before {
-        opacity: 1; // Show overlay on hover
-    }
+//     &:hover::before {
+//         opacity: 1; // Show overlay on hover
+//     }
 
-    // Card content styles
-    .card-body {
-        position: relative; // For z-index layering
-        z-index: 1; // Ensure content is above the pseudo-element
-        display: flex;
-        flex-direction: column; // Stack items vertically
-        align-items: center; // Center items
-        justify-content: center; // Center items
-        height: 100%; // Full height for vertical centering
-    }
-}
+//     // Card content styles
+//     .card-body {
+//         position: relative; // For z-index layering
+//         z-index: 1; // Ensure content is above the pseudo-element
+//         display: flex;
+//         flex-direction: column; // Stack items vertically
+//         align-items: center; // Center items
+//         justify-content: center; // Center items
+//         height: 100%; // Full height for vertical centering
+//     }
+// }
 
-.card-title {
-    font-size: 1.75rem; // Slightly larger for emphasis
-    color: $text-dark;
-    margin-bottom: 10px; // Space below title
-}
+// .card-title {
+//     font-size: 1.75rem; // Slightly larger for emphasis
+//     color: $text-dark;
+//     margin-bottom: 10px; // Space below title
+// }
 
-.card-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $primary-color;
-    margin: 10px 0; // Margin between price and description
-}
+// .card-price {
+//     font-size: 1.5rem;
+//     font-weight: bold;
+//     color: $primary-color;
+//     margin: 10px 0; // Margin between price and description
+// }
 
-.icon-container {
-    margin: 15px 0; // Margin for icon
-    color: $primary-color; // Icon color
-}
+// .icon-container {
+//     margin: 15px 0; // Margin for icon
+//     color: $primary-color; // Icon color
+// }
 
-.card-description {
-    font-size: 1rem;
-    color: #666; // Lighter text color for description
-    text-align: center; // Center align description
-}
+// .card-description {
+//     font-size: 1rem;
+//     color: #666; // Lighter text color for description
+//     text-align: center; // Center align description
+// }
 
-// Button Style
-.btn-primary {
-    background-color: $accent-color; // Accent color for the button
-    border: none; // No border
-    padding: 10px 20px; // Padding for the button
-    border-radius: 25px; // Rounded button
-    font-size: 1rem; // Button font size
-    transition: background-color 0.3s ease; // Transition for background color
+// // Button Style
+// .btn-primary {
+//     background-color: $accent-color; // Accent color for the button
+//     border: none; // No border
+//     padding: 10px 20px; // Padding for the button
+//     border-radius: 25px; // Rounded button
+//     font-size: 1rem; // Button font size
+//     transition: background-color 0.3s ease; // Transition for background color
 
-    &:hover {
-        background-color: darken($accent-color, 10%); // Darken button on hover
-    }
-}
+//     &:hover {
+//         background-color: darken($accent-color, 10%); // Darken button on hover
+//     }
+// }
 
-// Responsive Design
-@media (max-width: 768px) {
-    .trendy-card {
-        margin-bottom: 20px;
-    }
+// // Responsive Design
+// @media (max-width: 768px) {
+//     .trendy-card {
+//         margin-bottom: 20px;
+//     }
 
-    .card-title {
-        font-size: 1.5rem;
-    }
+//     .card-title {
+//         font-size: 1.5rem;
+//     }
 
-    .card-price {
-        font-size: 1.25rem;
-    }
+//     .card-price {
+//         font-size: 1.25rem;
+//     }
 
-    .card-description {
-        font-size: 0.9rem;
-    }
+//     .card-description {
+//         font-size: 0.9rem;
+//     }
 
-    .btn-primary {
-        font-size: 0.9rem; // Smaller button text on mobile
-    }
-}
+//     .btn-primary {
+//         font-size: 0.9rem; // Smaller button text on mobile
+//     }
+// }
+
+
+.banner {
+    height: 60vh;
+    width: 100vw;
+    background-image: url('../../../../assets/Banners/success\ stories.jpeg'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    color: #fff; /* Adjust the text color as needed */
+  }
+
+  

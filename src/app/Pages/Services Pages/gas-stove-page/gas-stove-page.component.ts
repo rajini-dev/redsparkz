@@ -11,7 +11,10 @@ export class GasStovePageComponent {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    window.scrollTo(0, 0); // Scrolls the page to the top on load
+  }
+  
 
   // Scroll to a specific service section
   scrollToService(serviceId: string, index: number): void {

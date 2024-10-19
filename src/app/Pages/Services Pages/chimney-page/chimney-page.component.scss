@@ -1,97 +1,13 @@
-
-.view-details{
-    text-decoration: none;
-    color: rgb(0, 68, 255);
-  }
-
-.view-details:hover{
-color: #ff0000;
+.banner {
+  height: 60vh;
+  width: 100vw;
+  background-image: url('../../../../assets/Banners/success\ stories.jpeg'); /* Add the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-//   FOR SLICK CAROUSEL
-::ng-deep .slick-prev:before, 
-::ng-deep .slick-next:before {
-    font-family: 'slick';
-    font-size: clamp(12px,2vw,20px);
-    line-height: 1;
-    opacity: .75;
-    color: #ff0000; /* Change this to any color you want */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+h1 {
+  color: #fff; /* Adjust the text color as needed */
 }
 
-// ICONS DESIGN
-.image-container {
-    display: flex; /* Use flexbox to center the image if necessary */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically if needed */
-    overflow: hidden; /* Ensure any overflow is hidden */
-}
-
-/* Responsive image styling */
-.responsive-image {
-    height: 250px; /* Set a fixed height */
-    width: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn't overflow its container */
-    object-fit: cover; /* Cover the area of the container without distorting the image */
-    transition: transform 0.3s ease; /* Optional: add a transition for hover effects */
-}
-
-/* Optional: Hover effect */
-.responsive-image:hover {
-    transform: scale(1.05); /* Slightly zoom in on hover */
-}
-.cost{
-color: grey;
-font-size: 12px !important;
-}
-
-.container {
-  display: flex;
-  position: relative;
-  margin-top: 60px; /* Add margin equal to header height */
-}
-
-
-
-.service-list {
-  width: 30%;
-  position: sticky;
-  top: 60px; /* Adjust this to match the height of the header */
-  
-}
-
-.service-details {
-  width: 70%;
-  overflow-y: auto;
-  height: calc(100vh - 60px); /* Full height minus header */
-}
-
-.details-content {
-  padding: 20px;
-  height: auto;
-}
-
-
-
-
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-  }
-
-  .service-list {
-      width: 100%;
-      // position: relative;
-  }
-
-  .service-details {
-      width: 100%;
-      overflow-y: auto;
-      height: auto;
-  }.details-content {
-    padding: 0;
-    height: auto;
-  }
-  
-}

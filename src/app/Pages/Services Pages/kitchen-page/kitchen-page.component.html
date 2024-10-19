@@ -1,18 +1,67 @@
-<div class="container my-5 py-5">
-    <h1 class="display-4 text-center mb-4 font-weight-bold">Kitchen Cleaning Services</h1>
-    <div class="row">
-        <div class="col-md-4 col-sm-6 mb-4" *ngFor="let service of kitchenServices">
-            <div class="trendy-card pricing-card">
-                <div class="card-body text-center">
-                    <h4 class="card-title font-weight-bold">{{ service.serviceName }}</h4>
-                    <p class="card-price">&#8377;{{ service.price }}</p>
-                    <div class="icon-container">
-                        <i class="fas fa-broom fa-4x"></i> <!-- Example icon -->
-                    </div>
-                    <p class="card-description">{{ service.description }}</p>
-                    <!-- <button class="btn btn-primary mt-3">Book Now</button> Booking Button -->
-                </div>
-            </div>
+<div class="banner">
+    <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="text-center">
+            <h1 class="display-4">Professional Kitchen Cleaning Services in Chennai</h1>
+            <app-whatsapp-callnow></app-whatsapp-callnow>
         </div>
     </div>
 </div>
+
+
+<div class="container mt-4">
+    <div class="heading-1 text-center mb-3">
+        Professional Kitchen Cleaning Services
+    </div>
+    <p>A clean kitchen is the heart of a healthy home. At Red Sparkz, we specialize in providing top-notch Kitchen
+        Cleaning Services that keep your kitchen spotless, hygienic, and ready for meal preparation. From deep cleaning
+        appliances to removing tough grease, we ensure that every nook and cranny of your kitchen sparkles. Whether it’s
+        an empty kitchen, one with appliances, or a chimney setup, we’ve got you covered with customizable cleaning
+        packages.
+    </p>
+</div>
+<app-kitchen-cleaning-gallery></app-kitchen-cleaning-gallery>
+<!-- <div class="heading-2">
+        Common Issues and Services in Chimney
+    </div>
+    <ul>
+        <li>
+            <p class="m-0 p-0">Chimney not working</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Chimney get tripped while switching on</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Noise from Chimney unit</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Power supply not coming Chimney</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Broken filter</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Dust does not ventilate through chimney</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Lock not working</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Oil leakage from motor</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Installation</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Uninstallation</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">General cleaning</p>
+        </li>
+        <li>
+            <p class="m-0 p-0">Deep cleaning</p>
+        </li>
+    </ul> -->
+<app-kitchen-table></app-kitchen-table>
+<app-why-choose-us></app-why-choose-us>
+<app-faq-kitchen></app-faq-kitchen>
+<app-terms></app-terms>
