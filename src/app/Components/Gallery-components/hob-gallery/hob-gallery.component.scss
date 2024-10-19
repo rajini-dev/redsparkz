@@ -1,0 +1,17 @@
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center; // Center text for a clean look
+  }
+  
+  .gallery-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; // Darker text for readability
+  }
+  
+  .gallery-container {
+    display: flex; // Use flexbox for layout
+    justify-content: center; // Center images
+    flex-wrap: wrap; // Allow wrapping
+    gap: 20px; // Space between images
+  }

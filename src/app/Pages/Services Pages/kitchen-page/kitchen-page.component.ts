@@ -36,4 +36,32 @@ export class KitchenPageComponent {
       price: 2499,
     },
   ];
+  services = [
+    {
+      title: 'Skilled Professionals',
+      description: 'Our team of certified experts is fully equipped to handle kitchens of any size or condition, delivering a deep clean that leaves your kitchen spotless and sanitized.',
+      icon: 'build'
+    },
+    {
+      title: 'Eco-Conscious Solutions',
+      description: 'We use eco-friendly, non-toxic products that are tough on stains but safe for your family and the environment.',
+      icon: 'eco'
+    },
+    {
+      title: 'Tailored Cleaning Packages',
+      description: 'We offer customized cleaning packages for any kitchen setup, whether it’s empty, fully equipped, or includes a chimney.',
+      icon: 'view_list'
+    },
+    {
+      title: 'Convenient Scheduling',
+      description: 'Book at your convenience with flexible scheduling options to fit your busy life.',
+      icon: 'schedule'
+    },
+    {
+      title: '100% Satisfaction Guarantee',
+      description: 'If you’re not happy with the results, we’ll make it right—guaranteed.',
+      icon: 'check_circle'
+    }
+  ];
+
 }

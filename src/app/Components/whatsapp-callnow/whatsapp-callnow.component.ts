@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./whatsapp-callnow.component.scss']
 })
 export class WhatsappCallnowComponent {
-
+  whatsappNumber: string = '9344722425'; 
+  
 }

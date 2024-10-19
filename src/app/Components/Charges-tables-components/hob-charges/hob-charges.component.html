@@ -1,0 +1,54 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" class="table-title">
+            <span class="title-text">CHIMNEY SERVICES</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="red">Service Type</th>
+          <th class="red">Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cleaning of servicesList" 
+            (mouseenter)="onHover(cleaning)" 
+            (mouseleave)="onLeave()">
+          <td class="service-type">
+            <i class="material-icons info-icon" (click)="toggleTooltip(cleaning)">info</i>
+            {{ cleaning.type }}
+            <span *ngIf="hoveredCleaning === cleaning" class="tooltip">{{ cleaning.description }}</span>
+          </td>
+          <td>{{ cleaning.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" class="table-title">
+            <span class="title-text">REPAIR CHARGES</span>
+          </th>
+        </tr>
+        <tr>
+          <th class="red">Repair Type</th>
+          <th class="red">Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let repair of repairsList" 
+            (mouseenter)="onHover(repair)" 
+            (mouseleave)="onLeave()">
+          <td class="service-type">
+            <i class="material-icons info-icon" (click)="toggleTooltip(repair)">info</i>
+            {{ repair.type }}
+            <span *ngIf="hoveredCleaning === repair" class="tooltip">{{ repair.description }}</span>
+          </td>
+          <td>{{ repair.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

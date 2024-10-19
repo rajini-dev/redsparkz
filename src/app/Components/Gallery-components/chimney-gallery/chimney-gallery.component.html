@@ -1,0 +1,8 @@
+<div class=" container-fluid">
+    <div class="heading-2 text-center">Our Gas Stove Service Gallery</div>
+    <div class="row">
+        <div class=" col-md-4 mt-4" *ngFor="let image of chimneyImages">
+            <img [src]="image.src" [alt]="image.alt" class="img-fluid" />
+        </div>
+    </div>
+</div>

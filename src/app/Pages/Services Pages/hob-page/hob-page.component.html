@@ -1,51 +1,26 @@
-<div class="container my-5 py-5">
-  <!-- Pricing Plans Section -->
-  <h1 class="text-center display-4 mb-5 font-weight-bold trendy-title">Our Service Packages</h1>
-  <div class="row trendy-pricing-cards">
-    <!-- Pricing plans with ngFor -->
-    <div class="col-md-4 mb-4" *ngFor="let plan of pricingPlans">
-      <div class="card pricing-card h-100 text-center">
-        <div class="card-body">
-          <h3 class="card-title trendy-heading">{{ plan.name }}</h3>
-          <p class="card-text trendy-price">Starts at ₹{{ plan.price }}</p>
-          <ul class="list-unstyled trendy-features">
-            <li *ngFor="let feature of plan.features">{{ feature }}</li>
-          </ul>
-
-          <!-- Call Us Button -->
-          <a href="tel:+911234567890" class="btn trendy-btn-primary mt-3">
-            <i class="fas fa-phone-alt"></i> Call Us
-          </a>
-
-          <!-- WhatsApp Button -->
-          <a href="https://wa.me/911234567890" target="_blank" class="btn trendy-btn-whatsapp mt-3">
-            <i class="fab fa-whatsapp"></i> WhatsApp Us
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact Us Section -->
-  <h1 class="text-center display-4 mt-5 mb-4 font-weight-bold trendy-title">Contact Us</h1>
-  
-  <div class="row trendy-contact">
-    <!-- Call Us Section -->
-    <div class="col-md-6 text-center mb-4">
-      <h3>Call Us Now</h3>
-      <p><i class="fas fa-phone trendy-icon"></i> +91-123-456-7890</p>
-      <a href="tel:+911234567890" class="btn trendy-btn-primary btn-lg mt-3">
-        <i class="fas fa-phone-alt"></i> Call Now
-      </a>
-    </div>
-
-    <!-- WhatsApp Section -->
-    <div class="col-md-6 text-center">
-      <h3>Chat with Us on WhatsApp</h3>
-      <p><i class="fab fa-whatsapp trendy-icon"></i> +91-123-456-7890</p>
-      <a href="https://wa.me/911234567890" target="_blank" class="btn trendy-btn-whatsapp btn-lg mt-3">
-        <i class="fab fa-whatsapp"></i> WhatsApp Us
-      </a>
+<div class="banner">
+  <div class="container d-flex justify-content-center align-items-center h-100">
+    <div class="text-center">
+      <h1 class="display-4">Professional Hob Cleaning Services in Chennai</h1>
+      <app-whatsapp-callnow></app-whatsapp-callnow>
     </div>
   </div>
 </div>
+
+
+<div class="container mt-4">
+  <div class="heading-1 text-center mb-3">
+    Professional Hob Cleaning Services
+  </div>
+  <p>Ensure your cooking space is spotless with our Hob Cleaning Services at Red Sparkz. We specialize in cleaning
+    hobs to remove tough stains, grease, and food buildup, ensuring a clean and hygienic surface for cooking. Our
+    deep cleaning process not only leaves your hob looking as good as new but also enhances its efficiency and
+    longevity. Whether it’s a gas, electric, or induction hob, we provide custom cleaning solutions tailored to
+    your setup.
+  </p>
+</div>
+<app-hob-gallery></app-hob-gallery>
+<app-hob-charges></app-hob-charges>
+<app-why-choose-us></app-why-choose-us>
+<app-faq-hob></app-faq-hob>
+<app-terms></app-terms>
