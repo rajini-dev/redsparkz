@@ -1,34 +1,66 @@
-<div class="container-fluid text-white p-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <img
-            class="img-fluid footer-logo"
-            src="../../../assets/Logo/redsparkz logo footer.png"
-            alt=""
-          />
+<div class="container-fluid text-white p-5 bg-dark">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Logo Section -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <img
+          class="img-fluid footer-logo"
+          src="../../../assets/Logo/redsparkz logo footer.png"
+          alt="Redsparkz Logo"
+        />
+      </div>
+      <!-- Quick Links Section -->
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <h2>Quick Links</h2>
+        <div class="d-flex flex-column align-items-center align-items-md-start">
+          <a [routerLink]="['/home']">Home</a>
+          <a [routerLink]="['/about']">About us</a>
+          <a [routerLink]="['/services']">Services</a>
+          <a [routerLink]="['/products']">Products</a>
+          <a [routerLink]="['/blogs']">Blogs</a>
+          <a [routerLink]="['/success-stories']">Success Stories</a>
         </div>
-        <div class="col-md-4 quick-links">
-          <h2>Quick Links</h2>
-          <a href="" [routerLink]="['/home']"> <p>Home</p></a>
-          <a href="" [routerLink]="['/about']"><p>About us</p></a>
-          <a href="" [routerLink]="['/services']"><p>Services</p></a>
-          <a href="" [routerLink]="['/products']"> <p>Products</p></a>
-          <a href="" [routerLink]="['/blogs']"><p>Blogs</p></a>
-          <a href="" [routerLink]="['/success-stories']">
-            <p>Success Stories</p></a
+      </div>
+      <!-- Join Us Section -->
+      <div class="col-12 col-md-4">
+        <h2>Join Us</h2>
+        <div
+          class="d-flex justify-content-center justify-content-md-start gap-3"
+        >
+          <div
+            class="d-flex justify-content-center justify-content-md-start gap-3"
           >
-        </div>
-        <div class="col-md-4">
-          <h2>Join Us </h2>
-          <div class="row">
-              <div class="">
-                <i class="fas fa-camera" style="color: aliceblue;"></i>
-                <i class="fab fa-square-instagram"></i>
-              </div>
+            <a href="https://facebook.com" target="_blank" class="text-white">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" class="text-white">
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-white">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="text-white">
+              <i class="fab fa-youtube fa-lg"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
+<!-- sub footer -->
+<div class="container-fluid bg-secondary text-white py-3">
+  <div class="container text-center">
+    <span class="mx-3">&copy; 2024 Redsparkz. All Rights Reserved.</span>
+    |
+    <a [routerLink]="['/terms-and-conditions']" class="text-white mx-3">
+      Terms and Conditions
+    </a>
+    |
+    <a [routerLink]="['/privacy-policy']" class="text-white mx-3">
+      Privacy Policy
+    </a>
+  </div>
+</div>
+<!-- sub footer ends -->
+
