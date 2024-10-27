@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class SideNavigationComponent {
   isProjectSectionOpen: boolean = false;
+menuTrigger: any;
 
   constructor(private router: Router) {}
 
@@ -20,5 +21,11 @@ export class SideNavigationComponent {
 
   navigateToExternal(url: string) {
     window.open(url, '_blank');
+  }
+
+  isServicesOpen = false; // Property to track the visibility of services
+
+  toggleServices() {
+    this.isServicesOpen = !this.isServicesOpen; // Toggle the services visibility
   }
 }

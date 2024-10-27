@@ -51,6 +51,10 @@ import { FaqChimneyComponent } from './Components/Faq-components/faq-chimney/faq
 import { FaqHobComponent } from './Components/Faq-components/faq-hob/faq-hob.component';
 import { FaqKitchenComponent } from './Components/Faq-components/faq-kitchen/faq-kitchen.component';
 import { FaqGasStoveComponent } from './Components/Faq-components/faq-gas-stove/faq-gas-stove.component';
+import { ComboServicePackComponent } from './Components/home-components/combo-service-pack/combo-service-pack.component';
+import { AboutPageComponent } from './Pages/about-page/about-page.component';
+import { ProductsComponent } from './Pages/products/products.component';
+import { BlogPageComponent } from './Pages/blog-page/blog-page.component';
 
 
 @NgModule({
@@ -93,6 +97,10 @@ import { FaqGasStoveComponent } from './Components/Faq-components/faq-gas-stove/
     FaqHobComponent,
     FaqKitchenComponent,
     FaqGasStoveComponent,
+    ComboServicePackComponent,
+    AboutPageComponent,
+    ProductsComponent,
+    BlogPageComponent,
   ],
   imports: [
     BrowserModule,

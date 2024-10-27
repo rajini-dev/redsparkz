@@ -11,9 +11,21 @@
     justify-content: start;
     padding: 5px 0 5px 20px;
   }
-  .box {
-    width: 100%;
+  // .box {
+  //   width: 100%;
+  // }
+  
+  .btns {
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between the services button and service list */
   }
+  
+  button {
+    display: block; /* Ensures each button is on a new line */
+    width: 100%; /* Makes buttons full width */
+    margin: 5px 0; /* Adds some space between buttons */
+  }
+  
   .down-arrow-1 {
     padding-left: 20px !important;
   }
@@ -24,6 +36,7 @@
   }
   
   .drawer-container {
+    align-items: start;
     position: fixed;
     top: 0;
     bottom: 0;

@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 300px;
-  min-height: 300px;
+  min-height: 400px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -57,7 +57,7 @@
 
 .service-duration {
   font-weight: bold;
-  color: #e63946;
+  // color: #e63946;
 }
 
 /* Button Styling */

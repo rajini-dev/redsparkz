@@ -10,10 +10,25 @@ import { GasstoveServiceDetailDialogComponent } from '../../dialog-boxes/gasstov
 export class GasStoveServiceComponent {
 
   gasStoveServices = [
-    { burnerType: '2 Burner', price: 399, details: 'Gas Leakage, Low Flame, Physical Damage, Knob Issues' },
-    { burnerType: '3 Burner', price: 499, details: 'Gas Leakage, Low Flame, Physical Damage, Knob Issues' },
-    { burnerType: '4 Burner', price: 599, details: 'Gas Leakage, Low Flame, Physical Damage, Knob Issues' },
-    { burnerType: '5 Burner', price: 699, details: 'Gas Leakage, Low Flame, Physical Damage, Knob Issues' }
+    { 
+      serviceImage:'assets/ home-services-images/gas stove repair.png',
+      serviceType: 'Gas stove repair',
+      price: 249,
+      description: 'Gas Leakage, Low Flame, Physical Damage, Knob Issues, High Flame',
+      duration: 'Minimum 45 minutes',
+    },
+    {
+      serviceImage:'assets/ home-services-images/gas stove steam cleaning.png',
+      serviceType: 'Full Deep Steam Cleaning & Repair ',
+      price: 349,
+      description: "Complete service combining deep steam cleaning and essential repairs, ensuring your gas stove is spotless and functioning at its best.",
+      duration: 'Minimum 45 minutes',
+      priceDetails: [
+        { price: '2 Burner - ₹349' },
+        { price: '3 Burner - ₹449' },
+        { price: '4 Burner - ₹549' },
+      ]
+    }
   ];
 
   slideConfig = {
@@ -24,6 +39,7 @@ export class GasStoveServiceComponent {
     speed: 300,
     autoplay: true,
     autoplaySpeed: 2000,
+
     responsive: [
       {
         breakpoint: 1300, // Medium screens (up to 1300px, 3 cards)
@@ -32,6 +48,7 @@ export class GasStoveServiceComponent {
           slidesToScroll: 1,
           infinite: true,
           dots:false,
+          arrows: false, 
         }
       },
       {
@@ -41,6 +58,7 @@ export class GasStoveServiceComponent {
           slidesToScroll: 1,
           infinite: true,
           dots:false,
+          arrows: false, 
         }
       },
       {
@@ -50,6 +68,7 @@ export class GasStoveServiceComponent {
           slidesToScroll: 1,
           infinite: true,
           dots:false,
+          arrows: true, 
         }
       }
     ]
@@ -59,6 +78,7 @@ export class GasStoveServiceComponent {
   // Function to open the dialog with details for each gas stove service
   openDialog(service: any): void {
     this.dialog.open(GasstoveServiceDetailDialogComponent, {
+      width: '500px',
       data: service  // Passing the service data to the dialog
     });
   }

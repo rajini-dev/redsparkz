@@ -23,53 +23,67 @@ export class ChimneyServiceComponent {
   
   chimneyServices = [
     {
+      serviceImage:'assets/ home-services-images/chimney basic cleaning.png',
       serviceType: 'Basic Chimney Cleaning',
-      price: 799,
+      price: 449,
       icon: 'fa-broom',
       description: 'Basic cleaning service to remove soot and minor blockages.',
-      duration: '30 minutes',
+      duration: '45 minutes',
       details: [
-        'Soot removal',
-        'Flue cleaning',
-        'Basic inspection'
+        'Removal of grease and other stains for cleaner look',
+        'Basic filter cleaning helps in better suction ',
+        'Industry grade chemicals used for better working in the long term'
       ]
     },
     {
-      serviceType: 'Deep Chimney  Cleaning',
-      price: 1499,
+      serviceImage:'assets/ home-services-images/chimney deep cleaning.png',
+      serviceType: 'Deep Chimney Cleaning',
+      price: 999,
       icon: 'fa-broom',
       description: 'Comprehensive deep cleaning with thorough inspections.',
-      duration: '1 hour',
+      duration: '1 hr 15 minutes',
       details: [
-        'Soot removal',
-        'Complete flue cleaning',
-        'Thorough inspection',
-        'Report on condition'
+        'Removal of grease and other stains for cleaner look',
+        'Filter cleaning helps in better suction',
+        'Duct cleaning helps in better release of stale air for improved functioning',
+        'Industry grade chemicals used for better working in the long term'
       ]
     },
     {
-      serviceType: 'Installation/Uninstallation',
-      price: 1999,
+   
+      serviceImage:'assets/ home-services-images/chimney installation.png',
+      serviceType: 'Installation',
+      price: 499,
       icon: 'fa-tools',
-      description: 'Expert installation or uninstallation of chimneys.',
-      duration: '2-3 hours',
+      description: 'Expert installation of chimneys.',
+      duration: '45 minutes',
       details: [
-        'Installation of new chimney',
-        'Old chimney removal',
+        'Installation of New / Old chimney',
         'Safety inspection'
       ]
     },
     {
+      serviceImage:'assets/ home-services-images/chimney dismantal.png',
+      serviceType: 'Dismantle',
+      price: 449,
+      icon: 'fa-tools',
+      description: 'Expert Dismantle of chimneys.',
+      duration: '45 minutes',
+      details: [
+  
+        'New / Old  chimney removal',
+        'Safety inspection'
+      ]
+    },
+    {
+      serviceImage:'assets/ home-services-images/chimney repair.png',
       serviceType: 'Chimney  Repairs',
-      price: 1299,
+      price: 149,
       icon: 'fa-wrench',
       description: 'Repair services for poor suction, fire not working, and noise problems.',
-      duration: '1-2 hours',
+      duration: 'Minimum 45 minutes',
       details: [
-        'Diagnosis of issues',
-        'Repairs for low suction',
-        'Fixing fire not working',
-        'Noise reduction services'
+        'If you are availing the service, no inspection charge, only pay the service charge. Incase not availing the service you have to pay the inspection charge ₹ 149'
       ]
     }
   ];

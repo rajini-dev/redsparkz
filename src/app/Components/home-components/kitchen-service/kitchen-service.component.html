@@ -1,7 +1,6 @@
-<div class="container my-5 py-5 kitchen-services-carousel">
+<!-- <div class="container my-5 py-5 kitchen-services-carousel">
     <h2 class="heading-1 text-center mb-4">Kitchen Services</h2>
-  
-    <!-- Slick Carousel for Kitchen Services -->
+
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
       <div ngxSlickItem *ngFor="let service of kitchenServices" class="slide">
         <mat-card class="service-card text-center p-3">
@@ -9,6 +8,35 @@
           <p class="service-price">Price: ₹{{ service.price }}</p>
           <mat-card-actions class="d-flex justify-content-center mt-0">
             <button mat-raised-button color="primary" (click)="openDialog(service)" class="view-details-btn">
+              View Details
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </ngx-slick-carousel>
+  </div> -->
+
+  <div class="container my-5 py-5 kitchen-services-carousel">
+    <h2 class="heading-1 text-center mb-4">Kitchen Cleaning Services</h2>
+  
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let service of kitchenServices" class="slide">
+        <mat-card class="service-card text-center ">
+          <mat-card-content class="service-image mt-0 pt-0 rounded">
+            <img class="img-fluid rounded" [src]="service.serviceImage" alt="">
+          </mat-card-content>
+          <mat-card-content>
+            <mat-card-title class="service-title">{{ service.serviceType }}</mat-card-title>
+          </mat-card-content>
+  
+          <mat-card-content>
+            <h3 class="service-price">Starts at ₹{{ service.price }}</h3>
+            <!-- <p class="service-description text-muted truncate-1">{{ service.description }}</p> -->
+            <span class="service-duration ">{{ service.duration }}</span>
+          </mat-card-content>
+  
+          <mat-card-actions class="d-flex justify-content-center mt-0">
+            <button mat-raised-button  (click)="openDialog(service)" class="view-details-btn">
               View Details
             </button>
           </mat-card-actions>

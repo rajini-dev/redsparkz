@@ -7,9 +7,9 @@
       <mat-icon (click)="closeDrawer.emit()">close</mat-icon>
     </div>
   </div>
-  <div class="navigation-links">
+  <div class="navigation-links ">
     <!-- Navigation links here -->
-    <div class="box">
+    <div class="box ">
       <mat-divider></mat-divider>
       <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/home']">
         Home
@@ -21,13 +21,38 @@
         About
       </button>
     </div>
-
     <div class="box">
       <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/services']">
-        Services
+      
+      <button mat-button (click)="toggleServices()" class="btns">
+        Services 
+        <span class="arrow">{{ isServicesOpen ? '▼' : '►' }}</span>
       </button>
+    
+      <!-- Services List -->
+      <div *ngIf="isServicesOpen"> <!-- Show the services list only if isServicesOpen is true -->
+    
+        <button mat-button [routerLink]="['/services/chimney']">
+          Chimney Services
+        </button>
+    
+        <mat-divider></mat-divider>
+        <button mat-button [routerLink]="['/services/gas-stove']">
+          Gas Stove Services
+        </button>
+    
+        <mat-divider></mat-divider>
+        <button mat-button [routerLink]="['/services/hob']">
+          Hob Services
+        </button>
+        <mat-divider></mat-divider>
+    
+        <button mat-button [routerLink]="['/services/kitchen-cleaning']">
+          Kitchen Cleaning
+        </button>
+      </div>
     </div>
+    
 
 
     <div class="box">
@@ -42,12 +67,6 @@
       <mat-divider></mat-divider>
       <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/blogs']">
         Blogs
-      </button>
-    </div>
-    <div class="box">
-      <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/success-stories']">
-        Success Stories
       </button>
     </div>
 

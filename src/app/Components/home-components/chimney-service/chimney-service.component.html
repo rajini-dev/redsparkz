@@ -6,6 +6,9 @@
       <div ngxSlickItem *ngFor="let service of chimneyServices" class="slide">
         <!-- <div class="card-wrapper py-3"> -->
           <mat-card class="chimney-card">
+            <mat-card-content class="service-image mt-0 pt-0 rounded">
+              <img class="img-fluid rounded" [src]="service.serviceImage" alt="">
+            </mat-card-content>
             <!-- Service Title and Price -->
             <mat-card-content class="text-center">
               <mat-card-title class="h4 service-title">{{ service.serviceType }}</mat-card-title>
@@ -14,8 +17,8 @@
             <!-- Chimney Service Info -->
             <mat-card-content class="text-center mb-0">
               <h3 class="service-price text-success">Starts at &#8377;{{ service.price }}</h3>
-              <p class="service-description text-muted">{{ service.description }}</p>
-              <span class="service-duration red">{{ service.duration }}</span>
+              <!-- <p class="service-description text-muted truncate-1">{{ service.description }}</p> -->
+              <span class="service-duration ">{{ service.duration }}</span>
             </mat-card-content>
   
             <!-- View Details Button -->

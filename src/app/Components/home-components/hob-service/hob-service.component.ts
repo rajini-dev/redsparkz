@@ -9,10 +9,24 @@ import { HobServiceDetailDialogComponent } from '../../dialog-boxes/hob-service-
 })
 export class HobServiceComponent {
   hobServices = [
-    { burnerType: '2 Burner', price: 499, details: 'Parking Pin Not Working, Low Flame, Physical Damage, Knob Issued' },
-    { burnerType: '3 Burner', price: 599, details: 'Parking Pin Not Working, Low Flame, Physical Damage, Knob Issued' },
-    { burnerType: '4 Burner', price: 699, details: 'Parking Pin Not Working, Low Flame, Physical Damage, Knob Issued' },
-    { burnerType: '5 Burner', price: 699, details: 'Parking Pin Not Working, Low Flame, Physical Damage, Knob Issued' }
+    // {
+    //   serviceType: 'Hob repair',
+    //   price: 199,
+    //   description: 'Gas Leakage, Low Flame, Physical Damage, Knob Issues, High Flame',
+    //   duration: 'Minimum 45 minutes',
+    // },
+    {
+      serviceImage:'assets/ home-services-images/hob service.png',
+      serviceType: 'Full Deep Cleaning & Repair ',
+      price: 399,
+      description: "Complete service combining deep steam cleaning and essential repairs, ensuring your gas stove is spotless and functioning at its best.",
+      duration: 'Minimum 45 minutes',
+      priceDetails: [
+        { price: '2 Burner - ₹399' },
+        { price: '3 Burner - ₹499' },
+        { price: '4 Burner - ₹599' },
+      ]
+    }
   ];
 
 
@@ -60,6 +74,7 @@ export class HobServiceComponent {
   // Function to open the dialog with details for each hob service
   openDialog(service: any): void {
     this.dialog.open(HobServiceDetailDialogComponent, {
+      width: '500px',
       data: service  // Passing the service data to the dialog
     });
   }

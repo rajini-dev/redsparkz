@@ -1,7 +1,14 @@
-<h2 mat-dialog-title>{{ data.name }} Service Details</h2>
+<h2 mat-dialog-title>{{ data.serviceType }} Details</h2>
 <div mat-dialog-content>
   <p><strong>Price:</strong> ₹{{ data.price }}</p>
-  <p><strong>Details:</strong> {{ data.details }}</p>
+  <p><strong>Description:</strong> {{ data.description }}</p>
+  <h5>Service Included:</h5>
+  <ul>
+    <li *ngFor="let item of data.details">
+      <strong>{{ item.heading }}:</strong> {{ item.details }}
+    </li>
+  </ul>
+  <p><strong>Duration:</strong> {{ data.duration }}</p>
 </div>
 <div mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>

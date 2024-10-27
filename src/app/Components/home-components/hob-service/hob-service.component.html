@@ -1,12 +1,21 @@
 <div class="container my-5 py-5 hob-services-carousel">
   <h2 class="heading-1 text-center mb-4">Hob Services</h2>
 
-  <!-- Slick Carousel for Hob Services -->
   <ngx-slick-carousel class="carousel" [config]="slideConfig">
     <div ngxSlickItem *ngFor="let service of hobServices" class="slide">
-      <mat-card class="service-card text-center p-3">
-        <h3 class="service-title">{{ service.burnerType }} Burner</h3>
-        <p class="service-price">Price: ₹{{ service.price }}</p>
+      <mat-card class="service-card text-center ">
+        <mat-card-content class="service-image mt-0 pt-0 rounded">
+          <img class="img-fluid rounded" [src]="service.serviceImage" alt="">
+        </mat-card-content>
+        <mat-card-content class="text-center">
+          <mat-card-title class="h4 service-title">{{ service.serviceType }}</mat-card-title>
+        </mat-card-content>
+
+        <mat-card-content class="text-center mb-0">
+          <h3 class="service-price text-success">Starts at &#8377;{{ service.price }}</h3>
+          <!-- <p class="service-description text-muted truncate-1">{{ service.description }}</p> -->
+          <span class="service-duration ">{{ service.duration }}</span>
+        </mat-card-content>
         <mat-card-actions class="d-flex justify-content-center mt-0">
           <button mat-raised-button color="primary" (click)="openDialog(service)" class="view-details-btn">
             View Details
@@ -16,3 +25,6 @@
     </div>
   </ngx-slick-carousel>
 </div>
+
+
+

@@ -303,3 +303,20 @@ h1, h2, h3, h4, h5, h6, .heading-1, .heading-2, .heading-3, .heading-4, .heading
   height: 0;                 /* Ensure no additional height */
   margin: 20px 0;            /* Optional: space around the line */
 }
+
+
+.truncate-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1 !important;  /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2 !important;  /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

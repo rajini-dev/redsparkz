@@ -1,14 +1,20 @@
-<h2 mat-dialog-title>{{ data.burnerType }} Burner Service Details</h2>
-    <div mat-dialog-content>
-      <p><strong>Price:</strong> ₹{{ data.price }}</p>
-      <p><strong>Issues Covered:</strong> {{ data.details }}</p>
-      <ul>
-        <li>Gas Leakage: ₹150</li>
-        <li>Low Flame: ₹150</li>
-        <li>Physical Damage: ₹150</li>
-        <li>Knob Issue: ₹150</li>
-      </ul>
-    </div>
-    <div mat-dialog-actions>
-      <button mat-button mat-dialog-close>Close</button>
-    </div>
+<h2 mat-dialog-title>{{ data.serviceType }}</h2>
+<div mat-dialog-content>
+  <!-- Display Single Price if no Price List is Available -->
+  <p *ngIf="!data.priceDetails">Starts At: <strong>₹{{ data.price }}</strong></p>
+
+  <!-- Display Price List if available -->
+  <div *ngIf="data.priceDetails && data.priceDetails.length > 0">
+    <h5>Price Details:</h5>
+    <ul>
+      <li *ngFor="let priceDetail of data.priceDetails">
+        {{ priceDetail.price }}
+      </li>
+    </ul>
+  </div>
+<h6><strong>Description:</strong></h6>
+  <p>{{ data.description }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
