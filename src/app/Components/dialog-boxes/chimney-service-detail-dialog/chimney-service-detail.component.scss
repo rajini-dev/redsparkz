@@ -1,0 +1,61 @@
+/* Style for Dialog Box */
+.dialog-box {
+  position: relative;
+  width: 100%; /* Ensure it spans full width */
+  height: 100%; /* Ensure it spans full height */
+}
+
+/* Positioning the Close Button outside of the dialog */
+
+.close-btn {
+  background-color: white;
+}
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 100; /* Ensure it's on top */
+}
+
+// .carousel-side img {
+//   width: 100%;
+// }
+
+.btn-box {
+  position: fixed;
+  top: 12%;
+  right: 25%;
+  z-index: 1000; /* Make sure it's above other content */
+  transition: all 0.3s ease; /* Smooth transition for position changes */
+}
+
+@media (max-width: 1200px) {
+  .btn-box {
+    right: 15%; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .btn-box {
+    top: 12%;
+    right: 12%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-box {
+    right: 15%; /* Adjust for even smaller screens */
+    top: 15%; /* Optional: Adjust vertical position for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-box {
+    right: 5%; /* Adjust for extra small screens */
+    top: 8%; /* Optional: Adjust vertical position for mobile */
+  }
+}

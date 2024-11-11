@@ -1,0 +1,28 @@
+<section class="why-choose-us bg-light py-3">
+    <div class="container text-center">
+      <h5 class="heading-1 text-center mb-3  font-weight-bold">Why Choose Us?</h5>
+      <!-- <p class="mb-5 mt-0">
+        At Red Sparkz, we offer high-quality and reliable services for your chimney, gas stove, hob, and kitchen cleaning needs. Our expert technicians are dedicated to ensuring customer satisfaction, using eco-friendly products and advanced techniques to deliver exceptional results. With flexible scheduling, affordable pricing, and regular maintenance plans, we provide a seamless experience that keeps your kitchen appliances in top condition. Discover why our customers love us and trust us to transform your kitchen into a cleaner, safer space.
+      </p> -->
+      <div class="row g-3 d-flex justify-content-center align-items-center">
+        <div *ngFor="let benefit of benefits" class="col-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="icon-container mb-2">
+                <i [class]="benefit.icon"></i>
+              </div>
+              <h5 class="card-title">{{ benefit.title }}</h5>
+              <!-- <p class="card-text">{{ benefit.description }}</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mt-5">
+        <a href="https://wa.me/{{ whatsappNumber }}" 
+           class="btn btn-whatsapp" target="_blank">
+          <i class="bi bi-whatsapp"></i> Book Now via WhatsApp
+        </a>
+      </div> -->
+    </div>
+  </section>
+  

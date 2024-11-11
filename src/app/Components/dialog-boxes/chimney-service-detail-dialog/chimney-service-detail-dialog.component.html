@@ -1,13 +1,33 @@
-<h1 mat-dialog-title>{{ data.serviceType }}</h1>
-<div mat-dialog-content>
-  <p><strong>Price:</strong> &#8377;{{ data.price }}</p>
-  <p><strong>Duration:</strong> {{ data.duration }}</p>
-  <p><strong>Description:</strong> {{ data.description }}</p>
-  <p><strong>What's included:</strong></p>
-  <ul>
-    <li *ngFor="let item of data.details">{{ item }}</li>
-  </ul>
+<!-- Dialog Box -->
+<div class="dialog-box">
+  <div mat-dialog-header class="m-0 p-0">
+    <carousel>
+      <slide *ngFor="let image of data.serviceImage">
+        <img class="img-fluid" [src]="image">
+      </slide>
+    </carousel>
+    <h1 class="text-center mt-3">{{ data.serviceType }}</h1>
+  </div>
+  <div mat-dialog-content class="p-2">
+    <p><strong>Price:</strong> &#8377;{{ data.price }}</p>
+    <p><strong>Duration:</strong> {{ data.duration }}</p>
+    <h5 class="green">Benefits</h5>
+    <ul class="m-0 p-0">
+      <li *ngFor="let item of data.details" class="d-flex align-items-start ">
+        <span><i class="fa-solid fa-square-check fa-lg" style="color: #019A31;"></i></span>
+        <span class="ms-2">{{ item }}</span>
+      </li>
+    </ul>
+    <app-mini-why-choose-us></app-mini-why-choose-us>
+  </div>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">Close</button>
+
+<!-- Fixed Close Button -->
+<div class="btn-box">
+  <button mat-icon-button class="close-btn" color="primary" (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
 </div>
+
+<!-- Fixed WhatsApp Component -->
+<app-whatsapp-callnow class="whatsapp-fixed"></app-whatsapp-callnow>

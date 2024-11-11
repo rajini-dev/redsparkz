@@ -55,6 +55,8 @@ import { ComboServicePackComponent } from './Components/home-components/combo-se
 import { AboutPageComponent } from './Pages/about-page/about-page.component';
 import { ProductsComponent } from './Pages/products/products.component';
 import { BlogPageComponent } from './Pages/blog-page/blog-page.component';
+import { MiniWhyChooseUsComponent } from './Components/mini-why-choose-us/mini-why-choose-us.component';
+import { ChimneyReviewComponent } from './Components/Review-components/chimney-review/chimney-review.component';
 
 
 @NgModule({
@@ -101,6 +103,8 @@ import { BlogPageComponent } from './Pages/blog-page/blog-page.component';
     AboutPageComponent,
     ProductsComponent,
     BlogPageComponent,
+    MiniWhyChooseUsComponent,
+    ChimneyReviewComponent,
   ],
   imports: [
     BrowserModule,

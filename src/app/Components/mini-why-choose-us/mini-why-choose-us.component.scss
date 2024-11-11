@@ -1,0 +1,70 @@
+.icon-container {
+    font-size: 2rem;
+    color: #ff4d4d;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+h5{
+    font-size: 0.8rem;
+}
+//   for what app button
+//* WhatsApp Button Styling */
+.btn-whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: all 0.6s ease-in-out; /* Slower transition */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+  }
+  
+  .btn-whatsapp:hover {
+    background: #128C7E;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    text-decoration: none;
+  }
+  
+  .btn-whatsapp i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  /* Smooth pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(72, 187, 120, 0.5);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(72, 187, 120, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(72, 187, 120, 0);
+    }
+  }
+  
