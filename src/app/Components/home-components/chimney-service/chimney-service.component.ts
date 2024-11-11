@@ -89,7 +89,7 @@ export class ChimneyServiceComponent {
     const dialogRef = this.dialog.open(ChimneyServiceDetailComponent, {
       width: '500px',
       height: '600px',
-      maxWidth: '80vw',
+      maxWidth: '90vw',
       maxHeight: '80vh',
       data: service,
     });

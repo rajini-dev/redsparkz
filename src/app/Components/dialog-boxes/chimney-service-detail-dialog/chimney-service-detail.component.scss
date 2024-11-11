@@ -1,61 +1,43 @@
-/* Style for Dialog Box */
-.dialog-box {
-  position: relative;
-  width: 100%; /* Ensure it spans full width */
-  height: 100%; /* Ensure it spans full height */
-}
 
-/* Positioning the Close Button outside of the dialog */
-
-.close-btn {
-  background-color: white;
-}
+/* Fix the WhatsApp button's placement */
 .whatsapp-fixed {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
-  width: 100%; /* Full width */
+  width: 100%;
   background-color: white;
   text-align: center;
   padding: 10px;
-  z-index: 100; /* Ensure it's on top */
+  z-index: 100;
+}
+.dialog-box {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  width: 30px; /* Smaller button size */
+  height: 30px; /* Smaller button size */
+/* Optional: make the button background white */
+  border-radius: 50%; /* Optional: make the button round */
+  padding: 0; /* Ensure no extra padding */
+
+}
+.close-btn mat-icon {
+  font-weight: 900 !important;
+  font-size: 16px; /* Smaller icon size */
+  line-height: 25px; /* Align icon within the smaller button */
 }
 
-// .carousel-side img {
-//   width: 100%;
-// }
-
-.btn-box {
-  position: fixed;
-  top: 12%;
-  right: 25%;
-  z-index: 1000; /* Make sure it's above other content */
-  transition: all 0.3s ease; /* Smooth transition for position changes */
+::ng-deep.carousel-control-next-icon, ::ng-deep.carousel-control-prev-icon {
+  display: inline-block;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
 }
 
-@media (max-width: 1200px) {
-  .btn-box {
-    right: 15%; /* Adjust for medium screens */
-  }
-}
 
-@media (max-width: 992px) {
-  .btn-box {
-    top: 12%;
-    right: 12%; /* Adjust for smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .btn-box {
-    right: 15%; /* Adjust for even smaller screens */
-    top: 15%; /* Optional: Adjust vertical position for mobile */
-  }
-}
-
-@media (max-width: 576px) {
-  .btn-box {
-    right: 5%; /* Adjust for extra small screens */
-    top: 8%; /* Optional: Adjust vertical position for mobile */
-  }
-}

@@ -1,32 +1,6 @@
-/* Ensure the slick-slide items align correctly */
-.carousel .slick-track {
-  display: flex !important;
-  align-items: stretch;
-  justify-content: center;
-}
-
-/* Each slide should stretch its contents */
-.slide {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
-
-// /* Card Wrapper - Ensure the card takes up full height */
-// .card-wrapper {
-//   display: flex;
-//   height: 100%;
-//   width: 100%;
-//   justify-content: center;
-// }
 
 /* Card Styling */
 .chimney-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 300px;
-  min-height: 400px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -73,20 +47,3 @@
 .view-details-btn:hover {
   background-color: #0056b3;
 }
-
-/* Responsive Styling */
-// @media (max-width: 768px) {
-//   .chimney-card {
-//     padding: 15px;
-//   }
-// }
-
-// @media (max-width: 576px) {
-//   .slide {
-//     padding: 0 10px;
-//   }
-
-//   .chimney-card {
-//     padding: 10px;
-//   }
-// }

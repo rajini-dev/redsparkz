@@ -1,7 +1,5 @@
-<div class="container my-5 py-5 gas-stove-carousel">
+<!-- <div class="container my-5 py-5 gas-stove-carousel">
     <div class="heading-1 text-center mb-4">Gas Stove Services</div>
-  
-    <!-- Slick Carousel for Gas Stove Services -->
     <ngx-slick-carousel class="carousel" [config]="slideConfig">
       <div ngxSlickItem *ngFor="let service of gasStoveServices" class="slide">
         <mat-card class="service-card text-center">
@@ -14,7 +12,6 @@
 
           <mat-card-content class="text-center mb-0">
             <h3 class="service-price text-success">Starts at &#8377;{{ service.price }}</h3>
-            <!-- <p class="service-description text-muted truncate-1">{{ service.description }}</p> -->
             <span class="service-duration ">{{ service.duration }}</span>
           </mat-card-content>
           <mat-card-actions class="d-flex justify-content-center mt-0">
@@ -26,5 +23,31 @@
       </div>
     </ngx-slick-carousel>
   </div>
-  
-
+   -->
+   <div class="container my-5 ">
+    <div class="heading-1 text-center mb-4">Gas Stove Services</div>
+  </div>
+   <div class="container d-flex justify-content-center align-items-center">
+    <div class="row d-flex justify-content-center align-items-center ">
+      <div class="col-lg-4 col-md-6 col-10 my-md-3 d-flex justify-content-center align-items-center px-md-5"
+        *ngFor="let service of gasStoveServices">
+        <mat-card class="service-card my-2">
+          <mat-card-content class="service-image rounded">
+            <img class="img-fluid rounded" [src]="service.serviceImage[0]" alt="">
+          </mat-card-content>
+          <mat-card-content class="text-center mt-3">
+            <h5 class=" service-title m-0 p-0">{{ service.serviceType }}</h5>
+          </mat-card-content>
+          <mat-card-content class="text-center mt-2">
+            <h3 class="service-price text-success">Starts at &#8377;{{ service.price }}</h3>
+            <p class="service-duration">{{ service.duration }}</p>
+          </mat-card-content>
+          <mat-card-content class="d-flex justify-content-center align-items-center mt-3 mb-2 ">
+            <button mat-raised-button color="primary" (click)="openDialog(service)" class="view-details-btn">
+              View Details
+            </button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
