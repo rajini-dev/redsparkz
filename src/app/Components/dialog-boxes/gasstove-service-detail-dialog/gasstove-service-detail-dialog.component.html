@@ -1,23 +1,4 @@
-<!-- <h2 mat-dialog-title>{{ data.serviceType }}</h2>
-<div mat-dialog-content>
 
-  <p *ngIf="!data.priceDetails">Starts At: <strong>₹{{ data.price }}</strong></p>
-
-
-  <div *ngIf="data.priceDetails && data.priceDetails.length > 0">
-    <h5>Price Details:</h5>
-    <ul>
-      <li *ngFor="let priceDetail of data.priceDetails">
-        {{ priceDetail.price }}
-      </li>
-    </ul>
-  </div>
-<h6><strong>Description:</strong></h6>
-  <p>{{ data.description }}</p>
-</div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
-</div> -->
 <div class="dialog-box">
   <button mat-icon-button color="secondary" class="close-btn" (click)="onNoClick()">
     <mat-icon>close</mat-icon>

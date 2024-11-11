@@ -42,9 +42,10 @@
 
 <!-- app.component.html -->
 
-<div class="">
-    <div class="row  d-flex justify-content-center align-items-center">
-        <div class="carousel-side col-md-6 col-12 order-md-2 ">
+<div class="container-fluid d-flex justify-content-center align-items-center ">
+
+    <div class="row mt-md-2 ">
+        <div class="col-md-6 col-12 order-md-2 p-0 m-0">
             <carousel>
                 <slide *ngFor="let banner of banners">
                     <img class="img-fluid" [src]="banner.image" [alt]="banner.alt">
@@ -52,45 +53,40 @@
             </carousel>
         </div>
 
-        <div class="content-side col-md-6 col-12 order-md-1 px-md-5 px-4">
-            <h1 class="banner-title-1 mt-md-0 mt-3">Sparkling Clean Homes <br>with Red Sparkz</h1>
-            <p class="my-3">
+        <div class=" col-md-6 d-flex justify-content-center align-items-center col-12 order-md-1 px-md-4">
+            <div class="">
+                <h1 class="banner-title-1 mt-md-0 mt-3">Sparkling Clean Homes <br>with Red Sparkz</h1>
+                <p class="my-3">
 
-                Experience high-quality cleaning and home appliance services that keep your space sparkling clean and
-                your appliances in perfect working order.
-            </p>
-            <div class="row mt-md-5 ">
-                <div class="col-md-6" *ngFor="let point of points">
-                    <p class="para-text">
-                        <span>
-                            <img class="thumbu-up  me-2" src="../../../../assets/Home-images/thumbs up.png"
-                                alt="" /></span>
-                        <span>{{point.text }}</span>
-                    </p>
+                    Experience high-quality cleaning and home appliance services that keep your space sparkling clean
+                    and
+                    your appliances in perfect working order.
+                </p>
+                <div class="row mt-md-5 ">
+                    <div class="col-md-6" *ngFor="let point of points">
+                        <p class="para-text">
+                            <span>
+                                <img class="thumbu-up  me-2" src="../../../../assets/Home-images/thumbs up.png"
+                                    alt="" /></span>
+                            <span>{{point.text }}</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-md-5 mt-3">
-                <div class="col-6 order-md-2">
-                    <button mat-stroked-button class="rounded-pill py-md-4 py-2 w-100 button-custom-2" color="primary"
-                        [routerLink]="['/contact-us']">
-                        Find Out More
-                    </button>
-                </div>
-                <div class="col-6 order-md-1 ">
-                    <button mat-stroked-button class="rounded-pill py-md-4 py-2 w-100 button-custom-1" color="primary"
-                        [routerLink]="['/contact-us']">
-                        Get Call Today
-                    </button>
+                <div class="row mt-md-5 mt-3">
+                    <div class="col-6 order-md-2">
+                        <button mat-stroked-button class="rounded-pill py-md-4 py-2 w-100 button-custom-2"
+                            color="primary" [routerLink]="['/contact-us']">
+                            Find Out More
+                        </button>
+                    </div>
+                    <div class="col-6 order-md-1 ">
+                        <button mat-stroked-button class="rounded-pill py-md-4 py-2 w-100 button-custom-1"
+                            color="primary" [routerLink]="['/contact-us']">
+                            Get Call Today
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="content-side col-md-6 col-12 order-md-1">
-            <h1 class="headline">Sparkling Clean Homes <br>with Red Sparkz</h1>
-            <p class="subheadline">
-                Experience the best in cleaning services! Our expert team provides top-notch chimney, gas stove, hob,
-                and kitchen cleaning solutions tailored to your needs.
-            </p>
-            <button class="cta-btn">Get Started</button>
-        </div> -->
     </div>
 </div>

@@ -1,20 +1,28 @@
-<h2 mat-dialog-title>{{ data.serviceType }}</h2>
-<div mat-dialog-content>
-  <!-- Display Single Price if no Price List is Available -->
-  <p *ngIf="!data.priceDetails">Starts At: <strong>₹{{ data.price }}</strong></p>
-
-  <!-- Display Price List if available -->
-  <div *ngIf="data.priceDetails && data.priceDetails.length > 0">
-    <h5>Price Details:</h5>
-    <ul>
-      <li *ngFor="let priceDetail of data.priceDetails">
-        {{ priceDetail.price }}
+<div class="dialog-box">
+  <button mat-icon-button color="secondary" class="close-btn" (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <div class="m-0 p-0">
+    <carousel class="">
+      <slide *ngFor="let image of data.serviceImage">
+        <img class="img-fluid" [src]="image">
+      </slide>
+    </carousel>
+  </div>
+  <div class="p-md-3 p-2">
+    <h2 class=" card-title">{{ data.serviceType }}</h2>
+    <h5 class="mt-2"><span style="font-size: medium;">Stars at </span> &#8377;{{ data.price }}</h5>
+    <p  class="text-muted">Duration: <strong>{{ data.duration }}</strong></p>
+    <h5 class="green">Benefits</h5>
+    <ul class="m-0 p-0">
+      <li *ngFor="let item of data.details" class="d-flex align-items-start">
+        <span><i class="fa-solid fa-square-check fa-lg" style="color: #019A31;"></i></span>
+        <span class="ms-2">{{ item }}</span>
       </li>
     </ul>
   </div>
-<h6><strong>Description:</strong></h6>
-  <p>{{ data.description }}</p>
+  <app-mini-why-choose-us></app-mini-why-choose-us>
 </div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
-</div>
+
+<!-- Fixed WhatsApp Component -->
+<app-whatsapp-callnow class="whatsapp-fixed"></app-whatsapp-callnow>

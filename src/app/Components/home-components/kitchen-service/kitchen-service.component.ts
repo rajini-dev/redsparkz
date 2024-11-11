@@ -11,7 +11,9 @@ export class KitchenServiceComponent {
   // Data for Kitchen Services
  kitchenServices = [
   {
-    serviceImage:'assets/ home-services-images/kitchen basic service.png',
+    serviceImage:['assets/ home-services-images/kitchen basic service.png',
+      'assets/ home-services-images/kitchen basic service.png',
+    ],
     serviceType: 'Kitchen Cleaning with Chimney & Gas Stove (No Appliances)',
     price: '1,249',
     description:
@@ -45,7 +47,9 @@ export class KitchenServiceComponent {
     duration: 'Minimum 60 minutes',
   },
   {
-    serviceImage:'assets/ home-services-images/kitchen deep service.png',
+    serviceImage:['assets/ home-services-images/kitchen deep service.png',
+      'assets/ home-services-images/kitchen deep service.png',
+    ],
     serviceType: 'Kitchen Cleaning with Chimney & Gas Stove (With Appliances)',
     price: '2,199',
     description:
@@ -85,52 +89,59 @@ export class KitchenServiceComponent {
 ];
 
 
-  slideConfig = {
-    slidesToShow: 4, // Large screen (4 cards)
-    slidesToScroll: 1,
-    dots: false,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1300, // Medium screens (up to 1300px, 3 cards)
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 1024, // Smaller tablets (up to 1024px, 2 cards)
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600, // Mobile devices (up to 600px, 1 card)
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-    ],
-  };
+  // slideConfig = {
+  //   slidesToShow: 4, // Large screen (4 cards)
+  //   slidesToScroll: 1,
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1300, // Medium screens (up to 1300px, 3 cards)
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         dots: false,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 1024, // Smaller tablets (up to 1024px, 2 cards)
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         dots: false,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600, // Mobile devices (up to 600px, 1 card)
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         dots: false,
+  //       },
+  //     },
+  //   ],
+  // };
 
   constructor(public dialog: MatDialog) {}
 
-  // Function to open the dialog with details for each kitchen service
+  // Open dialog with unique service details
   openDialog(service: any): void {
-    this.dialog.open(KitchenServiceDetailDialogComponent, {
+    const dialogRef = this.dialog.open(KitchenServiceDetailDialogComponent, {
       width: '500px',
-      data: service, // Passing the service data to the dialog
+      height: '600px',
+      maxWidth: '90vw',
+      maxHeight: '80vh',
+      data: service,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
     });
   }
 }
