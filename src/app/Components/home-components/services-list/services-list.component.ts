@@ -11,26 +11,26 @@ export class ServicesListComponent {
       service: 'Chimney services',
       serviceImage: 'assets/Home-images/chimney-cleanig.webp',
       servicePrice:'150',
-      pageLink:'services/chimney',
+      pageLink:'chimney-service-chennai',
     },
     {
       service: 'Gas Stove services',
       serviceImage: 'assets/Home-images/chimney-cleanig.webp',
       servicePrice:'150',
-      pageLink:'services/gas-stove',
+      pageLink:'gas-stove-service-chennai',
     },
     {
       service: 'Hob services',
       serviceImage: 'assets/Home-images/chimney-cleanig.webp',
       servicePrice:'150',
-      pageLink:'services/hob',
+      pageLink:'hob-service-chennai',
     },
     
     {
       service: 'Kitchen Cleaning',
       serviceImage: 'assets/Home-images/chimney-cleanig.webp',
       servicePrice:'999',
-      pageLink:'services/kitchen-cleaning',
+      pageLink:'kitchen-cleaning-service-chennai',
     },
    
   ];
@@ -43,7 +43,6 @@ export class ServicesListComponent {
     
   ];
  
-
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,
