@@ -1,47 +1,24 @@
 .mob-logo {
-    max-width: 14rem;
-  }
-  
-  .btn-img {
-    max-width: 1.27663rem;
-  }
-  
-  .btns {
-    width: 100%;
-    justify-content: start;
-    padding: 5px 0 5px 20px;
-  }
-  // .box {
-  //   width: 100%;
-  // }
-  
-  .btns {
-    font-weight: bold;
-    margin-bottom: 10px; /* Adds space between the services button and service list */
-  }
-  
-  button {
-    display: block; /* Ensures each button is on a new line */
-    width: 100%; /* Makes buttons full width */
-    margin: 5px 0; /* Adds some space between buttons */
-  }
-  
-  .down-arrow-1 {
-    padding-left: 20px !important;
-  }
-  
-  .btn-color {
-    background-color: #ffffff;
-    border: none;
-  }
-  
-  .drawer-container {
-    align-items: start;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 75vw; /* Adjust width as needed */
-    background-color: #fff; /* Set background color as needed */
-    overflow-y: auto; /* Allow vertical scrolling within the drawer */
-  }
+  max-width: 14rem;
+  height: auto; /* Ensure the logo height is proportional */
+ /* Add some margin for spacing */
+}
+
+button {
+  display: block; /* Ensures each button is on a new line */
+  width: 100%; /* Makes buttons full width */
+  margin: 0; /* Adds some space between buttons */
+  border-radius: 0px;
+}
+
+.close-icon {
+  cursor: pointer;
+  /* Your close button styles */
+}
+
+.drawer-container{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 75vw;
+}

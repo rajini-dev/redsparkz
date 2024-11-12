@@ -13,10 +13,10 @@
           <mat-icon class="order-2">{{ menuTrigger.menuOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
         </button>
         <mat-menu #servicesMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/services/chimney']">Chimney</button>
-          <button mat-menu-item [routerLink]="['/services/gas-stove']">Gas stove</button>
-          <button mat-menu-item [routerLink]="['/services/hob']">Hob</button>
-          <button mat-menu-item [routerLink]="['/services/kitchen']">Kitchen</button>
+          <button mat-menu-item [routerLink]="['/chimney-service-chennai']">Chimney</button>
+          <button mat-menu-item [routerLink]="['/gas-stove-service-chennai']">Gas stove</button>
+          <button mat-menu-item [routerLink]="['/hob-service-chennai']">Hob</button>
+          <button mat-menu-item [routerLink]="['kitchen-cleaning-service-chennai']">Kitchen</button>
         </mat-menu>
       </div>
       
@@ -43,7 +43,7 @@
     </div>
   </div>
   <ng-template #mobileScreen>
-    <div (scroll)="onScroll()" class="d-flex align-items-center justify-content-center py-2">
+    <div (scroll)="onScroll()" class="d-flex align-items-center justify-content-center py-2 bg-white box-shadow">
       <div class="d-flex justify-content-center align-items-center col-2">
         <button mat-icon-button (click)="openDrawer.emit()" class="text-center white-bg">
           <mat-icon>menu</mat-icon>

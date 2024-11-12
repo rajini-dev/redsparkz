@@ -3,6 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
+import { MatListModule } from '@angular/material/list';
+
+import { MatExpansionModule } from '@angular/material/expansion';
+
+
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -119,7 +124,9 @@ import { ChimneyReviewComponent } from './Components/Review-components/chimney-r
     MatSidenavModule,
     MatDialogModule,
     SlickCarouselModule,
-    CarouselModule
+    CarouselModule,
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent],

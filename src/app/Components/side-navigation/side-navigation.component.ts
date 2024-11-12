@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-navigation',
@@ -7,25 +7,36 @@ import { Router } from '@angular/router';
   styleUrls: ['./side-navigation.component.scss']
 })
 export class SideNavigationComponent {
-  isProjectSectionOpen: boolean = false;
-menuTrigger: any;
+  @Output() closeDrawer: EventEmitter<any> = new EventEmitter();
+  
+  isDrawerOpen = false;  // Variable to track if the drawer is open
 
   constructor(private router: Router) {}
 
-  toggleProjectSection() {
-    this.isProjectSectionOpen = !this.isProjectSectionOpen;
+  ngOnInit() {
+    // Listen to router events and close the drawer on NavigationEnd
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.closeDrawer.emit();
+        this.isDrawerOpen = false;  // Close the drawer when navigation happens
+      }
+    });
   }
 
-  @Output()
-  closeDrawer: EventEmitter<any> = new EventEmitter();
+  toggleDrawer() {
+    this.isDrawerOpen = !this.isDrawerOpen;
+    if (this.isDrawerOpen) {
+      this.closeDrawer.emit(); // Close the drawer when toggled
+    }
+  }
 
   navigateToExternal(url: string) {
     window.open(url, '_blank');
   }
 
-  isServicesOpen = false; // Property to track the visibility of services
+  isServicesOpen = false;
 
   toggleServices() {
-    this.isServicesOpen = !this.isServicesOpen; // Toggle the services visibility
+    this.isServicesOpen = !this.isServicesOpen;
   }
 }

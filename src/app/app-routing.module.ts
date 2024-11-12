@@ -9,10 +9,10 @@ import { KitchenPageComponent } from './Pages/Services Pages/kitchen-page/kitche
 const routes: Routes = [
   {path:'',component:HomePageComponent,pathMatch:'full'},
   {path:'home',component:HomePageComponent},
-  { path:'services/gas-stove',component:GasStovePageComponent},
-  { path:'services/chimney',component:ChimneyPageComponent},
-  { path:'services/hob',component:HobPageComponent},
-  { path:'services/kitchen-cleaning',component:KitchenPageComponent},
+  { path:'gas-stove-service-chennai',component:GasStovePageComponent},
+  { path:'chimney-service-chennai',component:ChimneyPageComponent},
+  { path:'hob-service-chennai',component:HobPageComponent},
+  { path:'kitchen-cleaning-service-chennai',component:KitchenPageComponent},
 ];
 
 

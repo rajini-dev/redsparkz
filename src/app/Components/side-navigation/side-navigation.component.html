@@ -1,79 +1,81 @@
 <div class="drawer-container">
-  <div class="d-flex justify-content-between align-items-center">
-    <div class="">
-      <img src="../../../assets/Logo/redsparkz logo header.png" class="mob-logo" alt="redsparkz" />
-    </div>
-    <div class="close-icon me-3">
-      <mat-icon (click)="closeDrawer.emit()">close</mat-icon>
+  <div class="d-flex justify-content-evenly align-items-center py-2">
+    <img src="../../../assets/Logo/redsparkz logo header.png" class="mob-logo" alt="redsparkz" />
+    <div class="close-icon d-flex justify-content-center align-items-center">
+      <mat-icon color="primary" class="border" (click)="closeDrawer.emit()">close</mat-icon>
     </div>
   </div>
   <div class="navigation-links ">
-    <!-- Navigation links here -->
+
     <div class="box ">
       <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/home']">
+      <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center btn"
+        [routerLink]="['/home']">
         Home
       </button>
     </div>
     <div class="box">
       <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/about']">
+      <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center btn"
+        [routerLink]="['/about']">
         About
       </button>
     </div>
     <div class="box">
       <mat-divider></mat-divider>
-      
-      <button mat-button (click)="toggleServices()" class="btns">
-        Services 
-        <span class="arrow">{{ isServicesOpen ? '▼' : '►' }}</span>
+
+      <button mat-button (click)="toggleServices()" class="d-flex justify-content-start align-items-center btn">
+        <span class="order-1">Services</span>
+        <mat-icon class="order-2">{{ isServicesOpen ? 'expand_less' : 'expand_more' }}</mat-icon>
       </button>
-    
-      <!-- Services List -->
-      <div *ngIf="isServicesOpen"> <!-- Show the services list only if isServicesOpen is true -->
-    
-        <button mat-button [routerLink]="['/services/chimney']">
+      <mat-divider></mat-divider>
+
+      <div *ngIf="isServicesOpen">
+        <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center ps-5 btn"
+          [routerLink]="['/chimney-service-chennai']">
           Chimney Services
         </button>
-    
+
         <mat-divider></mat-divider>
-        <button mat-button [routerLink]="['/services/gas-stove']">
+        <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center ps-5 btn"
+          [routerLink]="['/gas-stove-service-chennai']">
           Gas Stove Services
         </button>
-    
+
         <mat-divider></mat-divider>
-        <button mat-button [routerLink]="['/services/hob']">
+        <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center ps-5 btn"
+          [routerLink]="['hob-service-chennai']">
           Hob Services
         </button>
         <mat-divider></mat-divider>
-    
-        <button mat-button [routerLink]="['/services/kitchen-cleaning']">
+
+        <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center ps-5 btn"
+          [routerLink]="['/kitchen-cleaning-service-chennai']">
           Kitchen Cleaning
         </button>
       </div>
     </div>
-    
-
 
     <div class="box">
       <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/products']">
+      <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center btn"
+        [routerLink]="['/products']">
         Products
       </button>
     </div>
 
-
     <div class="box">
       <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/blogs']">
+      <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center  btn"
+        [routerLink]="['/blogs']">
         Blogs
       </button>
     </div>
 
-
     <div class="box">
       <mat-divider></mat-divider>
-      <button mat-button (click)="closeDrawer.emit()" class="btns" [routerLink]="['/contact']">
+      <button mat-button (click)="closeDrawer.emit()" class="d-flex justify-content-start align-items-center btn"
+        [routerLink]="['/contact']">
         Contact
       </button>
       <mat-divider></mat-divider>

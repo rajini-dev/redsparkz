@@ -1,25 +1,14 @@
 .trendy-card {
   background: linear-gradient(135deg, #f7f7f7, #ffffff); /* Light gradient for a modern feel */
-  border: none; /* Remove any default borders */
-  height: 100%; /* Ensure all cards take the same height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   box-shadow: rgba(60, 64, 67, 0.15) 0px 2px 5px, rgba(60, 64, 67, 0.1) 0px 1px 3px; /* Softer shadows */
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
   border-radius: 15px; /* Modern rounded corners */
-  overflow: hidden; /* Ensures no overflow from card */
 }
 
 .trendy-card:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Elevated shadow on hover */
 }
-
-.card-link:hover .img-container img {
-  transform: scale(1.08); /* Zoom image slightly on hover */
-}
-
 .card-link {
   transition: text-decoration 0.2s ease; /* Smooth hover for link */
 }
@@ -28,59 +17,3 @@
   text-decoration: none; /* Remove underline on hover */
 }
 
-// .img-container {
-//   height: 220px;
-//   overflow: hidden;
-// }
-
-.trendy-card img {
-  max-height: 100%; /* Ensures image does not exceed container */
-  width: 100%; /* Full width for fluid layout */
-  object-fit: cover; /* Maintains aspect ratio and covers area */
-  transition: transform 0.3s ease-in-out; /* Smooth image scaling on hover */
-}
-
-// h4 {
-//   font-size: 1.25rem; /* Bolder, modern typography */
-//   font-weight: 600; /* Slightly bold for emphasis */
-// }
-
-p.grey {
-  color: #6c757d; /* Subtle grey text for secondary info */
-}
-
-p .green {
-  color: #28a745; /* Green accent for price */
-}
-
-@media (max-width: 768px) {
-  // h1.heading-1 {
-  //   font-size: 1.75rem; /* Adjust font size on smaller screens */
-  // }
-
-  // .img-container {
-  //   height: 180px; /* Adjust image container height for smaller screens */
-  // }
-}
-
-// .banner-container {
-//     width: 100%;
-//     height: auto;
-//   }
-  
-//   .picsum-img-wrapper {
-//     width: 100%;
-//   }
-  
-//   .banner-image {
-//     max-width: 100%;
-//     height: auto;
-//   }
-  
-//   .carousel-caption {
-//     background: rgba(0, 0, 0, 0.5);
-//     color: white;
-//     padding: 10px;
-//     border-radius: 5px;
-//   }
-  
