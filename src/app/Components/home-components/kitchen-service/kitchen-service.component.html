@@ -1,26 +1,14 @@
-<!-- <div class="container my-5 py-5 kitchen-services-carousel">
-    <h2 class="heading-1 text-center mb-4">Kitchen Services</h2>
-
-    <ngx-slick-carousel class="carousel" [config]="slideConfig">
-      <div ngxSlickItem *ngFor="let service of kitchenServices" class="slide">
-        <mat-card class="service-card text-center p-3">
-          <h3 class="service-title">{{ service.name }}</h3>
-          <p class="service-price">Price: ₹{{ service.price }}</p>
-          <mat-card-actions class="d-flex justify-content-center mt-0">
-            <button mat-raised-button color="primary" (click)="openDialog(service)" class="view-details-btn">
-              View Details
-            </button>
-          </mat-card-actions>
-        </mat-card>
-      </div>
-    </ngx-slick-carousel>
-  </div> -->
-
-  
- <div class="container my-5 ">
-  <h2 class="heading-1 text-center mb-4">Kitchen Services</h2>
+<div class="container my-md-5 my-3">
+  <p>
+    At Red Sparkz, we specialize in delivering professional kitchen cleaning services in Chennai to make your kitchen
+    look as good as new. Whether it’s stubborn grease, food stains, or dirty corners, our expert team ensures a
+    deep-cleaned, sanitized, and hygienic kitchen for a healthier cooking environment.
+  </p>
 </div>
- <div class="container d-flex justify-content-center align-items-center">
+<div class="container my-5 ">
+  <h2 class="heading-1 text-center mb-4">Kitchen Services Packages</h2>
+</div>
+<div class="container d-flex justify-content-center align-items-center">
   <div class="row d-flex justify-content-center align-items-center ">
     <div class="col-lg-4 col-md-6 col-10 my-md-3 d-flex justify-content-center align-items-center px-md-5"
       *ngFor="let service of kitchenServices">
@@ -44,4 +32,3 @@
     </div>
   </div>
 </div>
-  

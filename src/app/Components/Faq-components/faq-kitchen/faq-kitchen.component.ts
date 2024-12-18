@@ -8,14 +8,17 @@ import { Component } from '@angular/core';
 export class FaqKitchenComponent {
   questions = [
     { q: 'What kitchen cleaning services does Red Sparkz offer?', a: 'We offer comprehensive kitchen cleaning services, including deep cleaning of appliances, countertops, sinks, and floors.' },
-    { q: 'How often should I deep clean my kitchen?', a: 'We recommend deep cleaning your kitchen every 3 to 6 months, depending on usage and cooking habits.' },
-    { q: 'Are your kitchen cleaning products safe for my family?', a: 'Yes, Red Sparkz uses eco-friendly and non-toxic cleaning products that are safe for your family and pets.' },
-    { q: 'What is the process for scheduling kitchen cleaning services?', a: 'You can schedule kitchen cleaning services by calling us or booking directly through our website for flexible timing.' },
-    { q: 'How long does a kitchen cleaning session take?', a: 'A typical kitchen cleaning session takes about 2 to 4 hours, depending on the kitchen size and level of cleaning required.' },
-    { q: 'Can you customize kitchen cleaning services to meet my needs?', a: 'Yes, we offer customizable kitchen cleaning packages tailored to your specific needs and preferences.' },
-    { q: 'What should I do to prepare for a kitchen cleaning service?', a: 'To prepare, please clear countertops and remove any personal items to allow our team to clean effectively.' },
-    { q: 'Do you offer recurring kitchen cleaning services?', a: 'Yes, Red Sparkz provides recurring kitchen cleaning services on a weekly, bi-weekly, or monthly basis for your convenience.' }
+    { q: 'How often should I get my kitchen professionally cleaned?', a: 'It’s recommended to deep clean your kitchen every 3-6 months for hygiene and maintenance.' },
+    { q: 'Are the cleaning products used safe for my kitchen?', a: 'Yes, we use eco-friendly and non-toxic cleaning products that are safe for food-prep areas.' },
+    { q: 'How long does a kitchen deep cleaning take?', a: 'The time varies depending on the kitchen size, but it typically takes 3-4 hours for a complete deep clean.' },
+    { q: 'Do you clean appliances like chimneys and gas stoves?', a: 'Yes, we clean all appliances, including chimneys, hobs, gas stoves, ovens, and refrigerators.' },
+    { q: 'What is the cost of kitchen cleaning services in Chennai?', a: 'Our kitchen cleaning services start at ₹999, with customized packages based on your requirements.' },
+    { q: 'Can I schedule kitchen cleaning services for weekends?', a: 'Yes, we offer flexible booking options, including weekends and holidays.' },
+    { q: 'Do you provide a satisfaction guarantee?', a: 'Absolutely! We ensure 100% customer satisfaction with all our cleaning services.' },
+    { q: 'How do I book a kitchen cleaning service?', a: 'You can book by calling us at +91 98765 43210 or through our website.' },
+    { q: 'Do you offer discounts for regular kitchen cleaning services?', a: 'Yes, we have attractive offers for regular and recurring cleaning appointments.' }
   ];
+
   activeFAQ: number | null = null;
 
   toggleFAQ(index: number) {

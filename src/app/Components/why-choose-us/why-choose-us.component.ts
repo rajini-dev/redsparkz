@@ -11,22 +11,22 @@ export class WhyChooseUsComponent {
   benefits = [
     {
       icon: 'bi bi-person-check-fill',
-      title: 'Experienced Professionals',
-      description: 'Our skilled, certified technicians bring years of expertise to every job.'
+      title: 'Certified Technicians',
+      description: 'Trained experts for all leading brands and appliance types.'
     },
     {
       icon: 'bi bi-tools',
-      title: 'Comprehensive Services',
+      title: 'Comprehensive Support',
       description: 'We offer repair, cleaning, installation, and uninstallation services all in one place.'
     },
     {
       icon: 'bi bi-people-fill',
-      title: 'Customer-Centric Approach',
-      description: 'We listen to your needs and provide personalized solutions every time.'
+      title: 'Fast Doorstep Service',
+      description: 'We cover all major locations in Chennai for your convenience.'
     },
     {
       icon: 'bi bi-cash-stack',
-      title: 'Transparent Pricing',
+      title: 'Affordable Rates',
       description: 'No hidden fees or surprises. Just honest and fair pricing.'
     },
     {
@@ -36,8 +36,8 @@ export class WhyChooseUsComponent {
     },
     {
       icon: 'bi bi-shield-fill-check',
-      title: 'Satisfaction Guarantee',
-      description: 'If you’re not 100% happy, we’ll make it right.'
+      title: 'Quick Turnaround',
+      description: 'Same-day service across all major areas in Chennai'
     }
   ];
 }

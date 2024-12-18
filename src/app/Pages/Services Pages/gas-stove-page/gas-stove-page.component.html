@@ -1,26 +1,212 @@
 <div class="banner">
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="text-center">
-            <h1 class="display-4">Professional Gas Stove Cleaning Services in Chennai</h1>
+            <div class="mb-5 ">
+                <h1 class="heading-1 mb-3">Professional Gas Stove Repair & Cleaning Services in Chennai
+                </h1>
+                <p>Fast, Affordable, and Reliable Gas Stove Solutions with 30-Day Warranty</p>
+            </div>
             <app-whatsapp-callnow></app-whatsapp-callnow>
         </div>
     </div>
 </div>
 
+
 <app-gas-stove-service></app-gas-stove-service>
-<div class="container mt-4">
-    <div class="heading-1 text-center mb-3">
-        Professional Gas Stove Cleaning Services
+<div class="container my-md-5 my-4 ">
+
+    <div class="row d-flex justify-content-center align-items-start">
+        <div class="col-lg-5 col-md-5 col-8 my-md-0 my-3 order-md-2">
+            <div class="pointer" routerLink="/gas-stove-service-chennai">
+                <img class="img-fluid" src="../../../../assets/ home-services-images/gas stove repair.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 order-md-1">
+            <h1 class="text-start  h1">
+                Why Regular Gas Stove Cleaning is Important ?
+            </h1>
+            <ol class="p-3">
+                <li>
+                    <p>Safety First: Prevent gas leaks and fire risks.</p>
+                </li>
+                <li>
+                    <p>Improved Efficiency: Clean burners ensure proper heating and reduced gas wastage.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Hygiene: Eliminate grease, oil stains, and burnt residues for a cleaner kitchen.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Cost Savings: Regular maintenance avoids costly repairs in the future.
+                    </p>
+                </li>
+            </ol>
+        </div>
     </div>
-    <p>Keep your kitchen running smoothly with our expert Gas Stove Cleaning Services at Red Sparkz. We specialize in
-        cleaning all types of gas stoves, removing grease, grime, and burnt-on food to ensure optimal performance. Our
-        thorough cleaning process helps to maintain the efficiency and safety of your gas stove, giving you a fresh and
-        hygienic cooking surface. Whether it's a single burner or a multi-burner stove, we offer customized cleaning
-        packages to suit your needs.
-    </p>
 </div>
-<app-gas-stove-gallery></app-gas-stove-gallery>
-<app-gas-stove-charges></app-gas-stove-charges>
-<app-why-choose-us></app-why-choose-us>
+
+<div class="container">
+    <h1 class="text-center  h1 mb-md-5 mb-3">
+        Our Process - How We Work
+    </h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-lg-8 col-12">
+            <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="'700ms'">
+                <!-- Step 1: Booking Appointment -->
+                <mat-step>
+                    <ng-template matStepLabel> Booking Appointment</ng-template>
+                    <p>Call,book online and whats app for same-day service in Chennai.</p>
+                    <div>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+
+                <!-- Step 2: Inspection -->
+                <mat-step>
+                    <ng-template matStepLabel>Inspection</ng-template>
+                    <p>Our technician inspects your chimney and identifies issues.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+
+                <!-- Step 3: Deep Cleaning/Repair -->
+                <mat-step>
+                    <ng-template matStepLabel>Deep Cleaning/Repair</ng-template>
+                    <p>We perform thorough cleaning or necessary repairs using advanced tools.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+
+                <!-- Step 4: Quality Check -->
+                <mat-step>
+                    <ng-template matStepLabel>Quality Check</ng-template>
+                    <p>We ensure your chimney works perfectly before completing the job.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+
+                <!-- Step 5: Warranty Provided -->
+                <mat-step>
+                    <ng-template matStepLabel>Warranty Provided</ng-template>
+                    <p>Enjoy our 30-day service warranty for repairs.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button (click)="stepper.reset()">Reset</button>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+    </div>
+</div>
+
+
+<div class="container my-md-5 my-4 ">
+
+    <div class="row d-flex justify-content-center align-items-start">
+        <div class="col-lg-5 col-md-5 col-10 my-md-0 my-3 bg-black text-center">
+            <div class="pointer" routerLink="/hob-service-chennai">
+                <img class="img-fluid w-75 rounded" src="../../../../assets//Logo/redsparkz logo footer.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 ">
+            <h1 class="text-start  h1">
+                Why Choose Red Sparkz for Gas Stove Services?
+            </h1>
+            <ol class="ps-3">
+                <li>
+                    <p>Affordable Pricing: Quality gas stove services at the best price in Chennai.
+                    </p>
+                </li>
+                <li>
+                    <p>30-Day Service Warranty: Guaranteed satisfaction with all repairs and cleaning.</p>
+                </li>
+                <li>
+                    <p>
+                        Expert Technicians: Skilled professionals with years of experience.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Quick & Reliable Service: We prioritize your convenience with timely services.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Trusted for Major Brands: Hindware, Glen, Sunflame, Prestige, Pigeon, Elica, and more.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-start  h1">
+                Serving All Major Gas Stove Brands in Chennai
+            </h1>
+            <p>We provide repair and cleaning services for all leading brands:</p>
+            <ul class="ps-3">
+                <li>
+                    <p>Prestige Gas Stove Services
+                    </p>
+                </li>
+                <li>
+                    <p> Sunflame Gas Stove Services
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Pigeon Gas Stove Services
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Elica Gas Stove Services
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Hindware Gas Stove Repair
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Glen Gas Stove Cleaning
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <app-gas-stove-gallery></app-gas-stove-gallery> -->
+<!-- <app-gas-stove-charges></app-gas-stove-charges> -->
+<!-- <app-why-choose-us></app-why-choose-us> -->
 <app-faq-gas-stove></app-faq-gas-stove>
 <app-terms></app-terms>

@@ -1,13 +1,15 @@
 .banner {
-  height: 60vh;
+  height: 50vh;
   width: 100vw;
-  background-image: url('../../../../assets/Banners/success\ stories.jpeg'); /* Add the path to your background image */
+  // background-image: url('../../../../assets/Banners/success\ stories.jpeg'); /* Add the path to your background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #e0e0e0;
+  // border-radius:  0px 0px 20% 20%;
+  
 }
 
-h1 {
-  color: #fff; /* Adjust the text color as needed */
-}
-
+// h1 {
+//   color: #fff; /* Adjust the text color as needed */
+// }

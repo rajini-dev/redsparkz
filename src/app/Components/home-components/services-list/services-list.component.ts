@@ -9,26 +9,26 @@ export class ServicesListComponent {
   services = [
     {
       service: 'Chimney services',
-      serviceImage: 'assets/Home-images/chimney-cleanig.webp',
+      serviceImage: 'assets/ home-services-images/chimney basic cleaning.png',
       servicePrice:'150',
       pageLink:'chimney-service-chennai',
     },
     {
       service: 'Gas Stove services',
-      serviceImage: 'assets/Home-images/chimney-cleanig.webp',
+      serviceImage: 'assets/ home-services-images/gas stove repair.png',
       servicePrice:'150',
       pageLink:'gas-stove-service-chennai',
     },
     {
       service: 'Hob services',
-      serviceImage: 'assets/Home-images/chimney-cleanig.webp',
+      serviceImage: 'assets/ home-services-images/hob service.png',
       servicePrice:'150',
       pageLink:'hob-service-chennai',
     },
     
     {
       service: 'Kitchen Cleaning',
-      serviceImage: 'assets/Home-images/chimney-cleanig.webp',
+      serviceImage: 'assets/ home-services-images/kitchen deep service.png',
       servicePrice:'999',
       pageLink:'kitchen-cleaning-service-chennai',
     },

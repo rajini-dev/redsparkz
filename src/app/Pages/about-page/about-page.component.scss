@@ -1,0 +1,43 @@
+.banner {
+    height: 50vh;
+    width: 100vw;
+    background-image: url('../../../assets/about-us/about-us-bg.png'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-color: #e0e0e0;
+    // border-radius:  0px 0px 20% 20%;
+    
+  }
+  
+  // h1 {
+  //   color: #fff; /* Adjust the text color as needed */
+  // }
+  
+  @media (max-width: 768px) {
+    .banner {
+        height: 28vh; /* Set the height to 30vh for mobile screens */
+    }
+}
+
+.image-box{
+    width: 200px;
+   
+}
+
+.box{
+     border-radius: 45px 45px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+mat-card{
+    border-radius: 0px 0px 45px 45px;
+   min-height: 180px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+li{
+    list-style:circle ;
+}
+li:hover{
+    color: red;
+}
+

@@ -1,0 +1,23 @@
+.carousel-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+ /* Regular styles for the carousel caption */
+ .carousel-caption {
+    position: absolute;
+    bottom: 5.2%; /* Adjust as needed */
+    left: 6%;
+    color: white;
+    font-size: clamp(2rem,2vw,5rem); /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.6); /* Optional: Adds a shadow for better readability */
+  }
+
+  /* Media query to hide caption on mobile view */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  

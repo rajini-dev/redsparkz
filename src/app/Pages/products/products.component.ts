@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-
+  ngOnInit() {
+    window.scrollTo(0, 0); // Scrolls the page to the top on load
+  }
 }
