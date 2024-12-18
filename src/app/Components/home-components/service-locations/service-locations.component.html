@@ -1,0 +1,25 @@
+<div class="container">
+    <h1  class="text-center">Our Service Locations in Chennai</h1>
+    <p class="text-center">We proudly serve all neighborhoods across Chennai, including:</p>
+    <div class="row">
+        <div class="col-lg-3  col-md-4 col-6 my-3" *ngFor="let loc of locations">
+            <mat-card>
+                <mat-card-content>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="me-3">
+                            <i class="fa-solid fa-location-dot fa-2xl" style="color: #1ca800;"></i>
+                        </div>
+                        <h4 class="mt-2">{{ loc.location }}</h4>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <p>No matter where you are, our technicians are ready to help! Simply type <strong>“appliance repair near me in Chennai”</strong> and
+        book <strong>Red Sparkz</strong>  today.
+    </p>
+    <p> <strong>Note:</strong> For locations outside our primary service areas or in distant neighborhoods, an
+        additional cost may apply to cover travel expenses. We ensure complete transparency, and these charges will be
+        communicated upfront during booking.
+    </p>
+</div>

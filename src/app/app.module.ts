@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import {MatStepperModule} from '@angular/material/stepper';
 
 import { MatListModule } from '@angular/material/list';
 
@@ -62,8 +63,11 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { BlogPageComponent } from './Pages/blog-page/blog-page.component';
 import { MiniWhyChooseUsComponent } from './Components/mini-why-choose-us/mini-why-choose-us.component';
 import { ChimneyReviewComponent } from './Components/Review-components/chimney-review/chimney-review.component';
-
-
+import { BannerComponent } from './Components/home-components/banner/banner.component';
+import { OurTopServicesComponent } from './Components/home-components/our-top-services/our-top-services.component';
+import { WhyMaintenanceComponent } from './Components/home-components/why-maintenance/why-maintenance.component';
+import { ServiceLocationsComponent } from './Components/home-components/service-locations/service-locations.component';
+import { HomeFaqComponent } from './Components/Faq-components/home-faq/home-faq.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -110,6 +114,11 @@ import { ChimneyReviewComponent } from './Components/Review-components/chimney-r
     BlogPageComponent,
     MiniWhyChooseUsComponent,
     ChimneyReviewComponent,
+    BannerComponent,
+    OurTopServicesComponent,
+    WhyMaintenanceComponent,
+    ServiceLocationsComponent,
+    HomeFaqComponent,
   ],
   imports: [
     BrowserModule,
@@ -126,7 +135,8 @@ import { ChimneyReviewComponent } from './Components/Review-components/chimney-r
     SlickCarouselModule,
     CarouselModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-center align-items-center mb-4">
+        <h1 class="col-md-12 text-md-center text-start heading-1 "> (FAQs) - Home
+            Appliance Repair & Cleaning Services in Chennai
+        </h1>
+    </div>
+    <div class="faq-container">
+        <div class="accordion" id="faqChimneyAccordion">
+            <!-- Display questions incrementally -->
+            <div *ngFor="let question of questions.slice(0, visibleCount); let i = index"
+                class="card faq-card shadow-sm">
+                <div class="card-header faq-header" id="headingChimney{{i}}">
+                    <h5 class="mb-0">
+                        <button class="btn faq-btn d-flex justify-content-between align-items-center" type="button"
+                            (click)="toggleFAQ(i)">
+                            <span class="faq-question">{{ question.q }}</span>
+                            <span class="faq-icon" [ngClass]="{'rotate': activeFAQ === i}">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </h5>
+                </div>
+                <div [id]="'collapseChimney' + i" class="collapse" [ngClass]="{'show': activeFAQ === i}">
+                    <div class="card-body faq-body">
+                        <p>{{ question.a }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More & Show Less Buttons -->
+        <div class="text-center my-5">
+            <button mat-stroked-button color="primary" class="mx-2" *ngIf="visibleCount < questions.length"
+                (click)="loadMoreFAQs()">Show More</button>
+            <button mat-stroked-button color="success" class=" mx-2" *ngIf="visibleCount > 5"
+                (click)="showLessFAQs()">Show Less</button>
+        </div>
+    </div>
+</div>

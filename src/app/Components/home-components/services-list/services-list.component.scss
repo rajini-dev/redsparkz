@@ -1,6 +1,6 @@
 .trendy-card {
   background: linear-gradient(135deg, #f7f7f7, #ffffff); /* Light gradient for a modern feel */
-  box-shadow: rgba(60, 64, 67, 0.15) 0px 2px 5px, rgba(60, 64, 67, 0.1) 0px 1px 3px; /* Softer shadows */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
   border-radius: 15px; /* Modern rounded corners */
 }
@@ -15,5 +15,8 @@
 
 .card-link:hover {
   text-decoration: none; /* Remove underline on hover */
+}
+img {
+  border-radius: 12px;
 }
 

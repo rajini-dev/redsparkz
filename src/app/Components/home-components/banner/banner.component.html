@@ -1,0 +1,35 @@
+<!-- <div class="col-md-12 col-12  p-0 m-0">
+    <carousel>
+        <slide *ngFor="let banner of banners">
+            <img class="img-fluid" [src]="banner.image" [alt]="banner.alt">
+        </slide>
+    </carousel>
+</div> -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div 
+        *ngFor="let slide of slides; let i = index"
+        class="carousel-item" 
+        [class.active]="i === currentSlideIndex">
+        <div class="carousel-image-container">
+          <img [src]="slide.src" class="d-block w-100 h-100" [alt]="slide.alt">
+          <!-- <h1 class="carousel-caption text-start cursor typewriter-animation" >
+            Chennai’s #1  <br>Home Appliance Repair & <br>Cleaning Services 
+          </h1> -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- Previous button -->
+    <button class="carousel-control-prev" type="button" (click)="prevSlide()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+  
+    <!-- Next button -->
+    <button class="carousel-control-next" type="button" (click)="nextSlide()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  

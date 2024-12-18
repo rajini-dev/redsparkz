@@ -1,28 +1,35 @@
-<section class="why-choose-us py-4 py-md-5 bg-light">
-    <div class="container text-center">
-      <div class="heading-1 text-center mb-4  font-weight-bold">Why Choose Us?</div>
-      <p class="mb-5 mt-0">
+<!-- <section class="why-choose-us pb-4 pb-md-5 bg-light"> -->
+  <div class="container  pt-4 pt-md-5 ">
+    <div class="d-flex justify-content-center align-items-center">
+      <h1 class="heading-1 col-lg-10  col-12 mb-4  text-center font-weight-bold">Why Red Sparkz is the Best Choice for Kitchen
+        Appliance Services in Chennai</h1>
+    </div>
+    <!-- <p class="mb-5 mt-0">
         At Red Sparkz, we offer high-quality and reliable services for your chimney, gas stove, hob, and kitchen cleaning needs. Our expert technicians are dedicated to ensuring customer satisfaction, using eco-friendly products and advanced techniques to deliver exceptional results. With flexible scheduling, affordable pricing, and regular maintenance plans, we provide a seamless experience that keeps your kitchen appliances in top condition. Discover why our customers love us and trust us to transform your kitchen into a cleaner, safer space.
-      </p>
-      <div class="row g-3">
-        <div *ngFor="let benefit of benefits" class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <div class="icon-container mb-3">
-                <i [class]="benefit.icon"></i>
-              </div>
-              <h5 class="card-title">{{ benefit.title }}</h5>
-              <p class="card-text">{{ benefit.description }}</p>
+      </p> -->
+    <div class="row g-3  text-center">
+      <div *ngFor="let benefit of benefits" class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="icon-container mb-3">
+              <i [class]="benefit.icon"></i>
             </div>
+            <h6 class="card-title">{{ benefit.title }}</h6>
+            <p class="card-text">{{ benefit.description }}</p>
           </div>
         </div>
       </div>
-      <div class="mt-5">
-        <a href="https://wa.me/{{ whatsappNumber }}" 
-           class="btn btn-whatsapp" target="_blank">
-          <i class="bi bi-whatsapp"></i> Book Now via WhatsApp
-        </a>
-      </div>
     </div>
-  </section>
-  
+  </div>
+  <div class="text-center  pb-4 pb-md-5">
+    <div class="mt-md-5 mt-3">
+      <p class="mb-md-4 mb-3 mx-2 mx-md-0">
+        Searching for <strong> “affordable home appliance service near me in Chennai”?</strong> Book now on Red Sparkz today!
+      </p>
+
+      <a href="https://wa.me/{{ whatsappNumber }}" class="btn btn-whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i> Book Now via WhatsApp
+      </a>
+    </div>
+  </div>
+<!-- </section> -->

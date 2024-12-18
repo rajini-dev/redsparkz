@@ -1,67 +1,177 @@
 <div class="banner">
     <div class="container d-flex justify-content-center align-items-center h-100">
         <div class="text-center">
-            <h1 class="display-4">Professional Kitchen Cleaning Services in Chennai</h1>
+            <div class="mb-5 ">
+                <h1 class="heading-1 mb-3">Professional Kitchen Cleaning Services in Chennai
+                </h1>
+                <p>Say Goodbye to Grease and Stains – Sparkling Clean Kitchens Await You!
+                </p>
+            </div>
             <app-whatsapp-callnow></app-whatsapp-callnow>
+        </div>
+    </div>
+</div>
+<app-kitchen-service></app-kitchen-service>
+
+<div class="container my-md-5 my-4 ">
+    <div class="row d-flex justify-content-center align-items-start">
+        <div class="col-lg-5 col-md-5 col-10 my-md-0 my-3 order-md-2">
+            <div class="pointer" routerLink="/chimney-service-chennai">
+                <img class="img-fluid" src="../../../../assets/ home-services-images/kitchen basic service.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 order-md-1">
+            <h1 class="text-start  h1">
+                Benefits of Regular Kitchen Cleaning
+            </h1>
+            <ol class="p-3">
+                <li>
+                    <p>Improved Hygiene: Prevents bacteria and mold buildup for a safe cooking environment.
+                    </p>
+                </li>
+                <li>
+                    <p>Enhanced Kitchen Appearance: A clean kitchen is more inviting and pleasant to work in.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Elimination of Odors: Removes foul smells caused by grease and food residue.
+
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Increased Appliance Lifespan: Regular cleaning prevents damage caused by grime and grease
+                        buildup.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Reduced Health Risks: Clean and sanitized surfaces reduce food contamination and infections.
+                    </p>
+                </li>
+            </ol>
         </div>
     </div>
 </div>
 
 
-<div class="container mt-4">
-    <div class="heading-1 text-center mb-3">
-        Professional Kitchen Cleaning Services
+
+<div class="container">
+    <h1 class="text-center  h1 mb-md-5 mb-3">
+        Our Process - How We Work
+    </h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-lg-8 col-12">
+            <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="'700ms'">
+                <!-- Step 1: Booking Appointment -->
+                <mat-step>
+                    <ng-template matStepLabel> Booking Appointment</ng-template>
+                    <p>Call,book online and whats app for same-day service in Chennai.</p>
+                    <div>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+  
+                <!-- Step 2: Inspection -->
+                <mat-step>
+                    <ng-template matStepLabel>Inspection</ng-template>
+                    <p>Our technician inspects your chimney and identifies issues.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+  
+                <!-- Step 3: Deep Cleaning/Repair -->
+                <mat-step>
+                    <ng-template matStepLabel>Deep Cleaning/Repair</ng-template>
+                    <p>We perform thorough cleaning or necessary repairs using advanced tools.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+  
+                <!-- Step 4: Quality Check -->
+                <mat-step>
+                    <ng-template matStepLabel>Quality Check</ng-template>
+                    <p>We ensure your chimney works perfectly before completing the job.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </mat-step>
+  
+                <!-- Step 5: Warranty Provided -->
+                <mat-step>
+                    <ng-template matStepLabel>Warranty Provided</ng-template>
+                    <p>Enjoy our 30-day service warranty for repairs.</p>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button (click)="stepper.reset()">Reset</button>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
     </div>
-    <p>A clean kitchen is the heart of a healthy home. At Red Sparkz, we specialize in providing top-notch Kitchen
-        Cleaning Services that keep your kitchen spotless, hygienic, and ready for meal preparation. From deep cleaning
-        appliances to removing tough grease, we ensure that every nook and cranny of your kitchen sparkles. Whether it’s
-        an empty kitchen, one with appliances, or a chimney setup, we’ve got you covered with customizable cleaning
-        packages.
-    </p>
-</div>
-<app-kitchen-cleaning-gallery></app-kitchen-cleaning-gallery>
-<!-- <div class="heading-2">
-        Common Issues and Services in Chimney
+  </div>
+  
+
+
+<div class="container my-md-5 my-4 ">
+
+    <div class="row d-flex justify-content-center align-items-start">
+        <div class="col-lg-5 col-md-5 col-10 my-md-0 my-3 bg-black text-center">
+            <div class="pointer" routerLink="/hob-service-chennai">
+                <img class="img-fluid w-75 rounded" src="../../../../assets//Logo/redsparkz logo footer.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 ">
+            <h1 class="text-start  h1">
+                Why Choose Red Sparkz for Kitchen Cleaning Services?
+            </h1>
+            <ol class="ps-3">
+                <li>
+                    <p>Affordable Services: Professional cleaning at budget-friendly rates.
+                    </p>
+                </li>
+                <li>
+                    <p>Expert Team: Highly skilled cleaners with years of experience.</p>
+                </li>
+                <li>
+                    <p>
+                        Eco-Friendly Products: Safe and non-toxic cleaning solutions.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Customized Cleaning Plans: Tailored to suit your kitchen’s needs.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        On-Time Service: Quick and efficient cleaning, scheduled as per your convenience.
+                    </p>
+                </li>
+            </ol>
+        </div>
     </div>
-    <ul>
-        <li>
-            <p class="m-0 p-0">Chimney not working</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Chimney get tripped while switching on</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Noise from Chimney unit</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Power supply not coming Chimney</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Broken filter</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Dust does not ventilate through chimney</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Lock not working</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Oil leakage from motor</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Installation</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Uninstallation</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">General cleaning</p>
-        </li>
-        <li>
-            <p class="m-0 p-0">Deep cleaning</p>
-        </li>
-    </ul> -->
-<app-kitchen-table></app-kitchen-table>
-<app-why-choose-us></app-why-choose-us>
+  </div>
+
+ 
+  
+  
+
+ 
+
+  
+
+
+
+<!-- <app-kitchen-cleaning-gallery></app-kitchen-cleaning-gallery> -->
+
+<!-- <app-kitchen-table></app-kitchen-table> -->
+<!-- <app-why-choose-us></app-why-choose-us> -->
 <app-faq-kitchen></app-faq-kitchen>
 <app-terms></app-terms>

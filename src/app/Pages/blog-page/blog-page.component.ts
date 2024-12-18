@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-page.component.scss']
 })
 export class BlogPageComponent {
-
+  ngOnInit() {
+    window.scrollTo(0, 0); // Scrolls the page to the top on load
+  }
 }

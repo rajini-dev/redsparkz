@@ -1,0 +1,14 @@
+<div class="container my-md- my-md-4">
+    <h1 class="text-md-center mb-3">Why Regular Kitchen Appliance Maintenance Is Essential</h1>
+    <div class="row d-flex justify-content-center align-items-start" >
+        <div class="col-lg-3 col-md-5 col-10 my-md-4 my-3" *ngFor="let item of maintenanceItems">
+            <div>
+                <img class="img-fluid" [src]="item.image" [alt]="item.title">
+                <div class="text-center mt-3">
+                    <h5>{{ item.title }}</h5>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

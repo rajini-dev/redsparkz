@@ -6,25 +6,35 @@
         [routerLink]="['/home']" />
     </div>
     <div class="d-flex row col-10 justify-content-end align-items-center">
-
+      <div class="d-flex justify-content-center align-items-center col-auto">
+        <button mat-button class="white" [routerLink]="['/home']">
+          Home
+        </button>
+      </div>
+      <div class="d-flex justify-content-center align-items-center col-auto">
+        <button mat-button class="white" [routerLink]="['/about-us']">
+          About us
+        </button>
+      </div>
       <div class="d-flex justify-content-center align-items-center col-auto">
         <button mat-button class="white services-button order-1" [matMenuTriggerFor]="servicesMenu" #menuTrigger="matMenuTrigger">
           Services
           <mat-icon class="order-2">{{ menuTrigger.menuOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
         </button>
-        <mat-menu #servicesMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/chimney-service-chennai']">Chimney</button>
-          <button mat-menu-item [routerLink]="['/gas-stove-service-chennai']">Gas stove</button>
-          <button mat-menu-item [routerLink]="['/hob-service-chennai']">Hob</button>
-          <button mat-menu-item [routerLink]="['kitchen-cleaning-service-chennai']">Kitchen</button>
+        <mat-menu #servicesMenu="matMenu" class="mt-2">
+          <button mat-menu-item [routerLink]="['/chimney-service-chennai']">Chimney Services</button>
+          <button mat-menu-item [routerLink]="['/gas-stove-service-chennai']">Gas stove Services</button>
+          <button mat-menu-item [routerLink]="['/hob-service-chennai']">Hob Services</button>
+          <button mat-menu-item [routerLink]="['kitchen-cleaning-service-chennai']">Kitchens</button>
         </mat-menu>
       </div>
       
-      <div class="d-flex justify-content-center align-items-center col-auto">
+      
+      <!-- <div class="d-flex justify-content-center align-items-center col-auto">
         <button mat-button class="white" [routerLink]="['/products']">
           Products
         </button>
-      </div>
+      </div> -->
       <div class="d-flex justify-content-center align-items-center col-auto">
         <button mat-button class="white" [routerLink]="['/blogs']">
           Blogs
