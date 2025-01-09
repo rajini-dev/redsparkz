@@ -68,6 +68,7 @@ import { OurTopServicesComponent } from './Components/home-components/our-top-se
 import { WhyMaintenanceComponent } from './Components/home-components/why-maintenance/why-maintenance.component';
 import { ServiceLocationsComponent } from './Components/home-components/service-locations/service-locations.component';
 import { HomeFaqComponent } from './Components/Faq-components/home-faq/home-faq.component';
+import { BlogDetailComponent } from './Pages/blog-detail/blog-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -119,6 +120,7 @@ import { HomeFaqComponent } from './Components/Faq-components/home-faq/home-faq.
     WhyMaintenanceComponent,
     ServiceLocationsComponent,
     HomeFaqComponent,
+    BlogDetailComponent,
   ],
   imports: [
     BrowserModule,

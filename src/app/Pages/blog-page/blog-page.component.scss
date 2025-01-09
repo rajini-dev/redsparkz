@@ -1,0 +1,27 @@
+.banner {
+    height: 50vh;
+    width: 100vw;
+    background-image: url('../../../assets/about-us/about-us-bg.png'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-color: #e0e0e0;
+    // border-radius:  0px 0px 20% 20%;
+    
+  }
+  mat-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  mat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  mat-card-image {
+    height: 100px;
+    object-fit: cover;
+  }
+  
