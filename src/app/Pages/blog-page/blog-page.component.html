@@ -1,1 +1,42 @@
-<p>blog-page works!</p>
+<div class="banner">
+  <div
+    class="container-fluid d-flex justify-content-center align-items-center h-100"
+  >
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="heading-1 text-white mb-3">
+          Blogs - Red Sparkz Home Appliance Cleaning & Repair Services
+        </h1>
+        <!-- <p>Restore Your Kitchen Chimney’s Efficiency with Our Expert Technicians</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-md-4 my-3">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let blog of blogs">
+        <mat-card class="h-100">
+          <!-- Blog Image -->
+          <img mat-card-image [src]="blog.image" alt="{{ blog.title }}" />
+  
+          <!-- Blog Details -->
+          <mat-card-content>
+            <h5 mat-card-title>{{ blog.title }}</h5>
+            <p mat-card-subtitle>{{ blog.description }}</p>
+            <p>
+              <small class="text-muted">{{ blog.createdAt | date: 'mediumDate' }}</small>
+            </p>
+          </mat-card-content>
+  
+          <!-- Read More Button -->
+          <mat-card-actions class="d-flex justify-content-end">
+            <button mat-raised-button color="primary" [routerLink]="['/blog', blog.id]">
+              Read More
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

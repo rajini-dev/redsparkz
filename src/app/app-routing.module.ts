@@ -8,6 +8,7 @@ import { KitchenPageComponent } from './Pages/Services Pages/kitchen-page/kitche
 import { AboutPageComponent } from './Pages/about-page/about-page.component';
 import { BlogPageComponent } from './Pages/blog-page/blog-page.component';
 import { ProductsComponent } from './Pages/products/products.component';
+import { BlogDetailComponent } from './Pages/blog-detail/blog-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'hob-service-chennai', component: HobPageComponent },
   { path: 'kitchen-cleaning-service-chennai', component: KitchenPageComponent },
   { path: 'about-us', component: AboutPageComponent },
-  { path: 'blogs', component: BlogPageComponent },
+  { path: 'blog', component: BlogPageComponent },
+  { path: 'blog/:id', component: BlogDetailComponent },
   { path: 'products', component: ProductsComponent },
 ];
 
