@@ -5,9 +5,13 @@
   border-radius: 15px; /* Modern rounded corners */
 }
 
+mat-card{
+  min-height: 410px;
+}
 .trendy-card:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Elevated shadow on hover */
+  border: solid 2px  #FF3232,;
 }
 .card-link {
   transition: text-decoration 0.2s ease; /* Smooth hover for link */
@@ -15,8 +19,14 @@
 
 .card-link:hover {
   text-decoration: none; /* Remove underline on hover */
+  position: relative;
+}
+.arrow-mark{
+position: absolute;
+bottom: 10px;
+right: 15px;
 }
 img {
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
 }
 

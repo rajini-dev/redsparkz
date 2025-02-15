@@ -1,34 +1,43 @@
-<div class="container pb-md-4 ">
-  <div class="row d-flex justify-content-center align-items-center ">
-    <!-- <h1 class="heading-1 text-center mb-md-5 mb-4 display-4 font-weight-bold">What Service Are You Looking For?</h1> -->
-     <div class="col-lg-3 col-md-4 col-10 mb-4 pointer" *ngFor="let service of services">
+<div class="container pb-md-4 mt-5">
+  <div class="row d-flex justify-content-center align-items-center">
+    <h1 class="text-md-center mb-md-5 mb-3 h1">Home Appliance Services in Chennai – Expert Repair & Maintenance</h1>
+    
+    <div class="col-lg-3 col-md-4 col-10 mb-4 pointer" *ngFor="let service of services">
       <a [routerLink]="['/' + service.pageLink]" class="text-decoration-none card-link">
-        <mat-card class="trendy-card ">
-          <mat-card-content class="p-md-2 p-3">
-            <div class="img-container p-md-3 p-2">
-              <img class="img-fluid text-center" [src]="service.serviceImage" alt="{{service.service}}">
+        <mat-card class="trendy-card">
+          <mat-card-content class="p-2">
+            
+            <div class="img-container p-0">
+              <img class="img-fluid text-center" [src]="service.serviceImage" alt="{{ service.service }}">
             </div>
+            
             <div class="row">
-              <div class="col-10  d-flex justify-content-center align-items-center">
+              <div class="col-12 d-flex justify-content-start align-items-center">
+                <div>
+                  <h5 class="heading-4 mt-2 text-dark">{{ service.service }}</h5>
+                  <p class="grey font-weight-bold p-0 m-0">
+                    Starts from <span class="green" style="font-size: larger; font-weight: 700;">&#8377;{{ service.servicePrice }}</span>
+                  </p>
 
-                <div class="">
-                  <h5 class="heading-4  my-2 text-dark">{{service.service}}</h5>
-                  <p class="grey font-weight-bold  mb-md-3 mb-2">Starts from <span
-                      class="green">&#8377;{{service.servicePrice}}</span></p>
-                </div>
-              </div>
-              <div class="col-2 d-flex justify-content-end align-items-end">
-                <div class="secondary">
-                  <mat-icon color="primary">arrow_forward</mat-icon>
+                  <!-- Bullet Points for Service Types -->
+                  <ul class="service-list ps-4 mt-2 pt-0" >
+                    <li class="m-0 p-0" *ngFor="let type of service.serviceTypes">{{ type }}</li>
+                  </ul>
                 </div>
               </div>
             </div>
+            <!-- <div class="col-12 d-flex justify-content-end align-items-end"> -->
+              <div class="secondary arrow-mark">
+                <mat-icon color="primary">arrow_forward</mat-icon>
+              </div>
+            <!-- </div> -->
           </mat-card-content>
         </mat-card>
       </a>
     </div>
   </div>
 </div>
+
 
 <!-- <div class="col-md-6">
       <ngx-slick-carousel class="carousel" [config]="slideConfig">

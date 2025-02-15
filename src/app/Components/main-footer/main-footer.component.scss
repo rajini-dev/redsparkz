@@ -2,6 +2,10 @@
     width: 200px;
     height: 200px;
   }
+  // h2{
+  //   text-decoration: underline ;
+  //   text-underline-offset: 10px; 
+  // }
   
   .container-fluid{
     background-color: black;
@@ -9,12 +13,13 @@
   a{
     text-decoration: none;
     color: white;
+    margin-top: 1vh;
   }
   a:hover{
-    color:red;
-    font-size: 16px;
+    color:#FF3232;
+  font-size:15px;
     font-weight: 600;
   }
   .icon:hover i {
-    color:red;/* Replace with your desired hover color */
+    color:#FF3232;/* Replace with your desired hover color */
   }

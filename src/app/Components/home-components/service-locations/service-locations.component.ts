@@ -11,6 +11,10 @@ export class ServiceLocationsComponent {
     { location: 'Adyar' },
     { location: 'T. Nagar' },
     { location: 'Velachery' },
-    { location: 'Anna Nagar' }
+    { location: 'Anna Nagar' },
+    { location: 'Perambur' },
+    { location: 'Koyambedu' },
+    { location: 'Egmore' },
+
   ];
 }

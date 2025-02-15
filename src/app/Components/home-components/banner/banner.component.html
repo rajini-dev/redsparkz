@@ -5,7 +5,7 @@
         </slide>
     </carousel>
 </div> -->
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div 
         *ngFor="let slide of slides; let i = index"
@@ -13,23 +13,51 @@
         [class.active]="i === currentSlideIndex">
         <div class="carousel-image-container">
           <img [src]="slide.src" class="d-block w-100 h-100" [alt]="slide.alt">
-          <!-- <h1 class="carousel-caption text-start cursor typewriter-animation" >
-            Chennai’s #1  <br>Home Appliance Repair & <br>Cleaning Services 
-          </h1> -->
+       
         </div>
       </div>
     </div>
   
-    <!-- Previous button -->
     <button class="carousel-control-prev" type="button" (click)="prevSlide()">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
   
-    <!-- Next button -->
     <button class="carousel-control-next" type="button" (click)="nextSlide()">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  
+   -->
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center align-items-start">
+    <div
+      class="col-md-4 order-md-2 col-9 d-flex justify-content-center align-items-center py-md-3 py-0"
+    >
+      <img
+        class="img-fluid py-md-5 py-4"
+        src="../../../../assets/Home-images//landing-image.png"
+        alt=""
+      />
+    </div>
+    <div class="col-md-7 col-12 mt-md-5 mt-0 order-md-1">
+      <h1>
+        Top Home Appliance Repair & Cleaning Services in Chennai | Red Sparkz
+      </h1>
+      <!-- <h4>Expert Care, Personalized Service, Peace of Mind</h4> -->
+      <div class="mt-md-4 mt-3 mb-md-5 mb-4 col-md-11 col-12">
+        <p>
+          Searching for
+          <strong>trusted home appliance repair services in Chennai?</strong>
+          Red Sparkz is your ultimate solution! Specializing in
+          <strong>chimney cleaning, hob repair, gas stove maintenance,</strong>
+          and <strong> kitchen deep cleaning,</strong> we bring professional,
+          reliable, and affordable solutions to your doorstep. With skilled
+          technicians, quick service, and guaranteed satisfaction, we’ve become
+          a preferred choice for households across Chennai.
+        </p>
+      </div>
+      <app-whatsapp-callnow></app-whatsapp-callnow>
+    </div>
+  </div>
+</div>
