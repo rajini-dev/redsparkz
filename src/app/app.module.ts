@@ -69,6 +69,11 @@ import { WhyMaintenanceComponent } from './Components/home-components/why-mainte
 import { ServiceLocationsComponent } from './Components/home-components/service-locations/service-locations.component';
 import { HomeFaqComponent } from './Components/Faq-components/home-faq/home-faq.component';
 import { BlogDetailComponent } from './Pages/blog-detail/blog-detail.component';
+import { ChimneyBottomContentComponent } from './Components/Page-Bottom-Contents/chimney-bottom-content/chimney-bottom-content.component';
+import { HomePageBottomContentComponent } from './Components/Page-Bottom-Contents/home-page-bottom-content/home-page-bottom-content.component';
+import { KitchenBottomContentComponent } from './Components/Page-Bottom-Contents/kitchen-bottom-content/kitchen-bottom-content.component';
+import { GasstoveBottomContentComponent } from './Components/Page-Bottom-Contents/gasstove-bottom-content/gasstove-bottom-content.component';
+import { HobBottomContentComponent } from './Components/Page-Bottom-Contents/hob-bottom-content/hob-bottom-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -121,6 +126,11 @@ import { BlogDetailComponent } from './Pages/blog-detail/blog-detail.component';
     ServiceLocationsComponent,
     HomeFaqComponent,
     BlogDetailComponent,
+    ChimneyBottomContentComponent,
+    HomePageBottomContentComponent,
+    KitchenBottomContentComponent,
+    GasstoveBottomContentComponent,
+    HobBottomContentComponent,
   ],
   imports: [
     BrowserModule,

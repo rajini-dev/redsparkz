@@ -24,6 +24,15 @@
     <router-outlet></router-outlet>
     <!-- <app-home-donate></app-home-donate> -->
     <app-main-footer></app-main-footer>
+    <ng-container [ngSwitch]="afterFooterContent">
+      <app-home-page-bottom-content *ngSwitchCase="'home-bottom-content'"></app-home-page-bottom-content>
+      <app-gasstove-bottom-content *ngSwitchCase="'gasstove-bottom-content'"></app-gasstove-bottom-content>
+      <app-chimney-bottom-content *ngSwitchCase="'chimney-bottom-content'"></app-chimney-bottom-content>
+      <app-hob-bottom-content *ngSwitchCase="'hob-bottom-content'"></app-hob-bottom-content>
+      <app-kitchen-bottom-content *ngSwitchCase="'kitchen-bottom-content'"></app-kitchen-bottom-content>
+      <!-- <app-about-contact *ngSwitchCase="'aboutContact'"></app-about-contact> -->
+      <!-- Add more cases as needed -->
+    </ng-container>
   </div>
 </mat-drawer-container>
 

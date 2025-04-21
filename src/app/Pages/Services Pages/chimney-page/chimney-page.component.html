@@ -51,64 +51,82 @@
 </div>
 
 <div class="container">
-    <h1 class="text-center  h1 mb-md-5 mb-3">
-        Our Process - How We Work
+    <h1 class="text-center h1 mb-md-5 mb-3">
+      Our Process - How We Work
     </h1>
     <div class="d-flex justify-content-center align-items-center">
-        <div class="col-lg-8 col-12">
-            <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="'700ms'">
-                <!-- Step 1: Booking Appointment -->
-                <mat-step>
-                    <ng-template matStepLabel> Booking Appointment</ng-template>
-                    <p>Call,book online and whats app for same-day service in Chennai.</p>
-                    <div>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
-
-                <!-- Step 2: Inspection -->
-                <mat-step>
-                    <ng-template matStepLabel>Inspection</ng-template>
-                    <p>Our technician inspects your chimney and identifies issues.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
-
-                <!-- Step 3: Deep Cleaning/Repair -->
-                <mat-step>
-                    <ng-template matStepLabel>Deep Cleaning/Repair</ng-template>
-                    <p>We perform thorough cleaning or necessary repairs using advanced tools.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
-
-                <!-- Step 4: Quality Check -->
-                <mat-step>
-                    <ng-template matStepLabel>Quality Check</ng-template>
-                    <p>We ensure your chimney works perfectly before completing the job.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
-
-                <!-- Step 5: Warranty Provided -->
-                <mat-step>
-                    <ng-template matStepLabel>Warranty Provided</ng-template>
-                    <p>Enjoy our 30-day service warranty for repairs.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button (click)="stepper.reset()">Reset</button>
-                    </div>
-                </mat-step>
-            </mat-vertical-stepper>
-        </div>
+      <div class="col-lg-8 col-12">
+        <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="'700ms'">
+          
+          <!-- Step 1: Booking Appointment -->
+          <mat-step>
+            <ng-template matStepLabel>Booking Appointment</ng-template>
+            <p>
+              Schedule your service effortlessly via call, WhatsApp, or our online booking form. 
+              We offer same-day appointments across Chennai, ensuring your kitchen stays clean and functional without delay.
+            </p>
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
+  
+          <!-- Step 2: Inspection -->
+          <mat-step>
+            <ng-template matStepLabel>On-Site Inspection</ng-template>
+            <p>
+              Our trained technician arrives on time and performs a detailed inspection of your chimney, hob, gas stove, or kitchen area. 
+              We assess the issue thoroughly and provide clear recommendations for cleaning or repair.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
+  
+          <!-- Step 3: Deep Cleaning/Repair -->
+          <mat-step>
+            <ng-template matStepLabel>Deep Cleaning / Repair</ng-template>
+            <p>
+              Using modern tools and eco-friendly solutions, we perform intensive cleaning or repairs to restore your appliance to peak performance. 
+              We make sure to maintain hygiene, safety, and quality throughout the process.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
+  
+          <!-- Step 4: Quality Check -->
+          <mat-step>
+            <ng-template matStepLabel>Final Quality Check</ng-template>
+            <p>
+              After service, we run a quality check to ensure everything functions perfectly. 
+              We clean up the workspace and walk you through the completed service for your satisfaction.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
+  
+          <!-- Step 5: Warranty Provided -->
+          <mat-step>
+            <ng-template matStepLabel>Service Warranty</ng-template>
+            <p>
+              We stand by our work! All our repairs come with a 30-day service warranty. 
+              If any issues arise within this period, just reach out—we’ll resolve it at no extra cost.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+          </mat-step>
+  
+        </mat-vertical-stepper>
+      </div>
     </div>
-</div>
+  </div>
+  
 
 
 

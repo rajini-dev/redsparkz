@@ -8,13 +8,12 @@ import { Component } from '@angular/core';
 export class ServiceLocationsComponent {
   locations = [
     { location: 'Redhills' },
-    { location: 'Adyar' },
-    { location: 'T. Nagar' },
-    { location: 'Velachery' },
-    { location: 'Anna Nagar' },
-    { location: 'Perambur' },
+    { location: 'Ambattur' },
     { location: 'Koyambedu' },
-    { location: 'Egmore' },
-
+    { location: 'Anna nagar' },
+    { location: 'Madhavaram' },
+    { location: 'Perambur' },
+    { location: 'Kilpauk' },
+    { location: 'Maduravoyal' },
   ];
 }

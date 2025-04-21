@@ -11,16 +11,54 @@ import { ProductsComponent } from './Pages/products/products.component';
 import { BlogDetailComponent } from './Pages/blog-detail/blog-detail.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent, pathMatch: 'full' },
-  { path: 'home', component: HomePageComponent },
-  { path: 'gas-stove-service-chennai', component: GasStovePageComponent },
-  { path: 'chimney-service-chennai', component: ChimneyPageComponent },
-  { path: 'hob-service-chennai', component: HobPageComponent },
-  { path: 'kitchen-cleaning-service-chennai', component: KitchenPageComponent },
-  { path: 'about-us', component: AboutPageComponent },
-  { path: 'blog', component: BlogPageComponent },
-  { path: 'blog/:id', component: BlogDetailComponent },
-  { path: 'products', component: ProductsComponent },
+  { path: '', component: HomePageComponent,
+    data: { afterFooterContent: 'home-bottom-content' }, pathMatch: 'full' },
+  {
+    path: 'home',
+    component: HomePageComponent,
+    data: { afterFooterContent: 'home-bottom-content' },
+
+  },
+  {
+    path: 'gas-stove-service-chennai',
+    component: GasStovePageComponent,
+    data: { afterFooterContent: 'gasstove-bottom-content' },
+  },
+  {
+    path: 'chimney-service-chennai',
+    component: ChimneyPageComponent,
+    data: { afterFooterContent: 'chimney-bottom-content' },
+  },
+  {
+    path: 'hob-service-chennai',
+    component: HobPageComponent,
+    data: { afterFooterContent: 'hob-bottom-content' },
+  },
+  {
+    path: 'kitchen-cleaning-service-chennai',
+    component: KitchenPageComponent,
+    data: { afterFooterContent: 'kitchen-bottom-content' },
+  },
+  {
+    path: 'about-us',
+    component: AboutPageComponent,
+    data: { showExtraComponent: false },
+  },
+  {
+    path: 'blog',
+    component: BlogPageComponent,
+    data: { showExtraComponent: false },
+  },
+  {
+    path: 'blog/:id',
+    component: BlogDetailComponent,
+    data: { showExtraComponent: false },
+  },
+  {
+    path: 'products',
+    component: ProductsComponent,
+    data: { showExtraComponent: false },
+  },
 ];
 
 @NgModule({
