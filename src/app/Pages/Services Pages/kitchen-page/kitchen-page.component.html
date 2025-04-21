@@ -58,62 +58,79 @@
 
 
 <div class="container">
-    <h1 class="text-center  h1 mb-md-5 mb-3">
-        Our Process - How We Work
+    <h1 class="text-center h1 mb-md-5 mb-3">
+      Our Process - How We Work
     </h1>
     <div class="d-flex justify-content-center align-items-center">
-        <div class="col-lg-8 col-12">
-            <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="'700ms'">
-                <!-- Step 1: Booking Appointment -->
-                <mat-step>
-                    <ng-template matStepLabel> Booking Appointment</ng-template>
-                    <p>Call,book online and whats app for same-day service in Chennai.</p>
-                    <div>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
+      <div class="col-lg-8 col-12">
+        <mat-vertical-stepper [linear]="false" #stepper [animationDuration]="'700ms'">
+          
+          <!-- Step 1: Booking Appointment -->
+          <mat-step>
+            <ng-template matStepLabel>Booking Appointment</ng-template>
+            <p>
+              Book your service easily through a phone call, WhatsApp, or our website. 
+              We offer same-day chimney service across Chennai for your convenience.
+            </p>
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
   
-                <!-- Step 2: Inspection -->
-                <mat-step>
-                    <ng-template matStepLabel>Inspection</ng-template>
-                    <p>Our technician inspects your chimney and identifies issues.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
+          <!-- Step 2: Inspection -->
+          <mat-step>
+            <ng-template matStepLabel>Inspection</ng-template>
+            <p>
+              Our expert technician will inspect your chimney thoroughly to identify any issues 
+              and provide a detailed assessment before starting work.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
   
-                <!-- Step 3: Deep Cleaning/Repair -->
-                <mat-step>
-                    <ng-template matStepLabel>Deep Cleaning/Repair</ng-template>
-                    <p>We perform thorough cleaning or necessary repairs using advanced tools.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
+          <!-- Step 3: Deep Cleaning/Repair -->
+          <mat-step>
+            <ng-template matStepLabel>Deep Cleaning / Repair</ng-template>
+            <p>
+              Based on the inspection, we perform deep cleaning or carry out necessary repairs using 
+              industry-grade tools to ensure maximum performance and hygiene.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
   
-                <!-- Step 4: Quality Check -->
-                <mat-step>
-                    <ng-template matStepLabel>Quality Check</ng-template>
-                    <p>We ensure your chimney works perfectly before completing the job.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
-                    </div>
-                </mat-step>
+          <!-- Step 4: Quality Check -->
+          <mat-step>
+            <ng-template matStepLabel>Quality Check</ng-template>
+            <p>
+              We conduct a final quality check to ensure your chimney is functioning perfectly 
+              and meets our service standards before closing the job.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
   
-                <!-- Step 5: Warranty Provided -->
-                <mat-step>
-                    <ng-template matStepLabel>Warranty Provided</ng-template>
-                    <p>Enjoy our 30-day service warranty for repairs.</p>
-                    <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button (click)="stepper.reset()">Reset</button>
-                    </div>
-                </mat-step>
-            </mat-vertical-stepper>
-        </div>
+          <!-- Step 5: Warranty Provided -->
+          <mat-step>
+            <ng-template matStepLabel>Warranty Provided</ng-template>
+            <p>
+              Your satisfaction is our priority. That’s why we offer a 30-day service warranty. 
+              If an issue arises, we’ll fix it at no extra cost within this period.
+            </p>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+          </mat-step>
+  
+        </mat-vertical-stepper>
+      </div>
     </div>
   </div>
   
