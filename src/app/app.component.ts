@@ -8,7 +8,7 @@ import { filter } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'redsparkz';
+  title = 'Redsparkz - Best Home Appliance Service Partner in Chennai';
   afterFooterContent: string | null = null;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
